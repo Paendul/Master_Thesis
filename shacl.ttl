@@ -1,0 +1,11 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/ns#> .
+
+# Define the shape
+ex:ShapeName
+  a sh:Shape ;
+  sh:targetClass ex:TargetClass ;
+  sh:property [
+    sh:path ex:propertyName ;
+    sh:datatype xsd:string ;
+  ] .
