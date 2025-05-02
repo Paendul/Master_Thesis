@@ -1,9 +1,16 @@
 ############################################################
 # This script will extract data from kitchen_simulation.py #
-# and create a knowledge graph using rdflib.               #
+# and later create a knowledge graph using rdflib.         #
 ############################################################
 
 import rdflib
+import re # Regular expression module
+
+
+
+
+
+############################## knowledge graph creation ##############################
 
 # Create a new RDF graph
 graph = rdflib.Graph()

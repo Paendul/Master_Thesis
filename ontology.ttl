@@ -2,37 +2,87 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-# Define a class
-ex:Person a rdfs:Class ;
-    rdfs:label "Person" .
-
-# Define properties
-ex:hasName a rdf:Property ;
-    rdfs:domain ex:Person ;
-    rdfs:range rdfs:Literal ;
-    rdfs:label "has name" .
-
-ex:hasAge a rdf:Property ;
-    rdfs:domain ex:Person ;
-    rdfs:range rdfs:Literal ;
-    rdfs:label "has age" .
-
-# Define an individual
-ex:JohnDoe a ex:Person ;
-    ex:hasName "John Doe" ;
-    ex:hasAge "30" .
-
 # Define a class Object
 ex:Object a rdfs:Class ;
     rdfs:label "Object" .
+
+# Define properties for Object
+ex:isDisposable a rdf:Property ;
+    rdfs:domain ex:Object ;
+    rdfs:range rdfs:Boolean ;
+    rdfs:label "is disposable" .
+
+ex:isTrash a rdf:Property ;
+    rdfs:domain ex:Object ;
+    rdfs:range rdfs:Boolean ;
+    rdfs:label "is trash" .
+
+ex:isDirty a rdf:Property ;
+    rdfs:domain ex:Object ;
+    rdfs:range rdfs:Boolean ;
+    rdfs:label "is dirty" .
+
+ex:hasVolume a rdf:Property ;
+    rdfs:domain ex:Object ;
+    rdfs:range rdfs:float ;
+    rdfs:label "has volume" .
+
+ex:hasCurrentLocation a rdf:Property ;
+    rdfs:domain ex:Object ;
+    rdfs:range ex:KitchenComponent ;
+    rdfs:label "has current location" .
+
+ex:hasTargetLocation a rdf:Property ;
+    rdfs:domain ex:Object ;
+    rdfs:range ex:KitchenStorageComponent ;
+    rdfs:label "has target location" .
+
 
 # Define a class Kitchen Component (KC)
 ex:KitchenComponent a rdfs:Class ;
     rdfs:label "Kitchen Component" .
 
+# Define properties for Kitchen Component
+ex:isDirtyKC a rdf:Property ;
+    rdfs:domain ex:KitchenComponent ;
+    rdfs:range rdfs:Boolean ;
+    rdfs:label "is dirty" .
+
+ex:hasInteractionType a rdf:Property ; # add non unique property
+    rdfs:domain ex:KitchenComponent ;
+    rdfs:range rdfs:Literal ; #OperableObject, StaticObject, MovableObject
+    rdfs:label "has interaction type" .
+
+ex:hasCurrentLocationKC a rdf:Property ;
+    rdfs:domain ex:KitchenComponent ;
+    rdfs:range ex:coordinate ;
+    rdfs:label "has current location" .
+
+ex:hasTargetLocationKC a rdf:Property ;
+    rdfs:domain ex:KitchenComponent ;
+    rdfs:range ex:coordinate ;
+    rdfs:label "has target location" .
+
+ex:isClearKC a rdf:Property ;
+    rdfs:domain ex:KitchenComponent ;
+    rdfs:range rdfs:Boolean ;
+    rdfs:label "is clear" .
+
+
 # Define a subclass of Kitchen Component, Kitchen Stoorage Component (KSC)
 ex:KitchenStorageComponent a rdfs:Class ;
     rdfs:subClassOf ex:KitchenComponent ;
     rdfs:label "Kitchen Storage Component" .
+
+# Define properties for Kitchen Storage Component
+ex:isFullKSC a rdf:Property ;
+    rdfs:domain ex:KitchenStorageComponent ;
+    rdfs:range rdfs:Boolean ;
+    rdfs:label "is full" .
+
+
+# Define a class Action for the robot's possible actions
+ex:Action a rdfs:Class ;
+    rdfs:label "Action" .
 
 
