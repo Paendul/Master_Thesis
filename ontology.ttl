@@ -68,6 +68,7 @@ ex:isClearKC a rdf:Property ;
     rdfs:range rdfs:Boolean ;
     rdfs:label "is clear" .
 
+### Need to add affordance properties for the kitchen component in hasInteractionType
 
 # Define a subclass of Kitchen Component, Kitchen Stoorage Component (KSC)
 ex:KitchenStorageComponent a rdfs:Class ;
