@@ -5,72 +5,81 @@
 
 # Define a class Object
 ex:Object a rdfs:Class ; 
-    rdfs:label "Object" .
-    #add a comment to describe the class
+    rdfs:label "Object" ;
     rdfs:comment "An object in the kitchen that can be manipulated by the robot." .
-    # can use schema description instead of rdfs:comment
-
 
 # Define properties for Object
 ex:isDisposable a rdf:Property ; #should be a data property
     rdfs:domain ex:Object ;
     rdfs:range rdfs:Boolean ;
+    rdfs:comment "Indicates if the object is disposable." ;
     rdfs:label "is disposable" . 
 
 ex:isTrash a rdf:Property ;
     rdfs:domain ex:Object ;
     rdfs:range rdfs:Boolean ;
+    rdfs:comment "Indicates if the object is trash." ;
     rdfs:label "is trash" . #could be data or object property
 
 ex:isDirty a rdf:Property ;
     rdfs:domain ex:Object ;
     rdfs:range rdfs:Boolean ;
+    rdfs:comment "Indicates if the object is dirty." ;
     rdfs:label "is dirty" .
 
 ex:hasVolume a rdf:Property ;
     rdfs:domain ex:Object ;
     rdfs:range rdfs:float ;
+    rdfs:comment "Indicates the volume of the object." ;
     rdfs:label "has volume" .
 
 ex:hasCurrentLocation a rdf:Property ;
     rdfs:domain ex:Object ;
     rdfs:range ex:KitchenComponent ;
+    rdfs:comment "Indicates the current location of the object as a :KitchenComponent." ;
     rdfs:label "has current location" .
 
 ex:hasTargetLocation a rdf:Property ;
     rdfs:domain ex:Object ;
     rdfs:range ex:KitchenStorageComponent ;
+    rdfs:comment "Indicates the target location of the object as a :KitchenStorageComponent." ;
     rdfs:label "has target location" .
 
 
 # Define a class Kitchen Component (KC)
 ex:KitchenComponent a rdfs:Class ;
+    rdfs:comment "A component in the kitchen where objects can be placed." ;
     rdfs:label "Kitchen Component" .
 
 # Define properties for Kitchen Component
 ex:isDirtyKC a rdf:Property ;
     rdfs:domain ex:KitchenComponent ;
     rdfs:range rdfs:Boolean ;
+    rdfs:comment "Indicates if the kitchen component is dirty." ;
     rdfs:label "is dirty" .
 
 ex:hasInteractionType a rdf:Property ; # add non unique property
     rdfs:domain ex:KitchenComponent ;
     rdfs:range rdfs:Literal ; #OperableObject, StaticObject, MovableObject
+    rdfs:comment "Indicates the type of interaction the robot can have with the kitchen component." ;
     rdfs:label "has interaction type" .
 
 ex:hasCurrentLocationKC a rdf:Property ;
     rdfs:domain ex:KitchenComponent ;
     rdfs:range ex:coordinate ;
+    rdfs:comment "Indicates the current location of the kitchen component." ;
     rdfs:label "has current location" .
 
 ex:hasTargetLocationKC a rdf:Property ;
     rdfs:domain ex:KitchenComponent ;
     rdfs:range ex:coordinate ;
+    rdfs:comment "Indicates the target location of the kitchen component." ;
     rdfs:label "has target location" .
 
 ex:isClearKC a rdf:Property ;
     rdfs:domain ex:KitchenComponent ;
     rdfs:range rdfs:Boolean ;
+    rdfs:comment "Indicates if the surface of the kitchen component is clear." ;
     rdfs:label "is clear" .
 
 ### Need to add affordance properties for the kitchen component in hasInteractionType
@@ -78,12 +87,14 @@ ex:isClearKC a rdf:Property ;
 # Define a subclass of Kitchen Component, Kitchen Stoorage Component (KSC)
 ex:KitchenStorageComponent a rdfs:Class ;
     rdfs:subClassOf ex:KitchenComponent ;
+    rdfs:comment "A kitchen component in which objects can be stored." ;
     rdfs:label "Kitchen Storage Component" .
 
 # Define properties for Kitchen Storage Component
 ex:isFullKSC a rdf:Property ;
     rdfs:domain ex:KitchenStorageComponent ;
     rdfs:range rdfs:Boolean ;
+    rdfs:comment "Indicates if the kitchen storage component is occupied at full capacity." ;
     rdfs:label "is full" .
 
 
