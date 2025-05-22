@@ -1,9 +1,9 @@
 @prefix : <http://example.org/entities#> .
 
-:cabinet(1) a :KitchenStorageComponent ;
-    :nid "n9306" ;
-    :name "cabinet(1)" ;
-    :translation "2.15 -1 0.83" .
+:cabinet(1) a :KitchenStorageComponent ; #parenthesis are not allowed in the name
+    :nid "n9306" ; #can use dcterms:identifier instead of nid
+    :name "cabinet(1)" ; #can use rdfs:label instead of name
+    :translation "2.15 -1 0.83" . #can use jo:hasCurrentLocation instead of translation
 :cabinet(2) a :KitchenStorageComponent ;
     :nid "n9472" ;
     :name "cabinet(2)" ;

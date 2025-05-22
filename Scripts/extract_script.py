@@ -13,15 +13,15 @@ def extract_solid_names_and_translations(xml_content):
         name = solid.get("name")
         translation = solid.get("translation")
         if name is not None and translation is not None and nid is not None:
-            results.append({"nid": nid, "name": name, "translation": translation})
+            results.append({"nid": nid, "name": name, "translation": translation, "type": None})
     return results
 
 
-def save_results_to_excel(results, filename):
+def save_results_to_csv(results, filename):
     df = pd.DataFrame(results)
-    df.to_excel(filename, index=False)
+    df.to_csv(f'./Inputs/{filename}', index=False)
 
-xml_content = open('./kitchen_simulation.w3d').read()
+xml_content = open('./Inputs/kitchen_simulation.w3d').read()
 results = extract_solid_names_and_translations(xml_content)
-save_results_to_excel(results, 'entities.xlsx')
+save_results_to_csv(results, 'entities.csv')
 

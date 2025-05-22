@@ -1,21 +1,26 @@
-@prefix ex: <http://example.org/> .
+@prefix ex: <http://example.org/> . #change ex into your own namespace to make it into w3id eventually
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # Define a class Object
-ex:Object a rdfs:Class ;
+ex:Object a rdfs:Class ; 
     rdfs:label "Object" .
+    #add a comment to describe the class
+    rdfs:comment "An object in the kitchen that can be manipulated by the robot." .
+    # can use schema description instead of rdfs:comment
+
 
 # Define properties for Object
-ex:isDisposable a rdf:Property ;
+ex:isDisposable a rdf:Property ; #should be a data property
     rdfs:domain ex:Object ;
     rdfs:range rdfs:Boolean ;
-    rdfs:label "is disposable" .
+    rdfs:label "is disposable" . 
 
 ex:isTrash a rdf:Property ;
     rdfs:domain ex:Object ;
     rdfs:range rdfs:Boolean ;
-    rdfs:label "is trash" .
+    rdfs:label "is trash" . #could be data or object property
 
 ex:isDirty a rdf:Property ;
     rdfs:domain ex:Object ;
