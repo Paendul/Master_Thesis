@@ -1,11 +1,11 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix ex: <http://example.org/ns#> .
+@prefix koro: <http://w3id.org/koro#> .
 
 # Define the shape
-ex:ShapeName
+koro:ShapeName
   a sh:Shape ;
-  sh:targetClass ex:TargetClass ;
+  sh:targetClass koro:TargetClass ;
   sh:property [
-    sh:path ex:propertyName ;
+    sh:path koro:propertyName ;
     sh:datatype xsd:string ;
   ] .
