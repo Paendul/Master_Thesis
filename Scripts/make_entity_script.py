@@ -8,13 +8,13 @@ import pandas as pd
 def make_turtle_entity(nid, name, translation, entity_type):
     entity_uri = f":{name.replace('(', '_').replace(')', '')}"
     lines = []
-    if entity_type == "Object":
-        lines = [
-            f"{entity_uri} a :{entity_type} ;",
-            f'    dcterms:identifier "{nid}" ;',
-            f'    rdfs:label "{entity_uri}" ;',
-            f'    :translation "{translation}" .\n\n'
-        ]
+    #if entity_type == "Object":
+    lines = [
+        f'{entity_uri} a :{entity_type} ;',
+        f'    dcterms:identifier "{nid}" ;',
+        f'    rdfs:label "{entity_uri.replace(":","")}" ;',
+        f'    :translation "{translation}" .\n\n'
+    ]
     return "\n".join(lines)
     
 

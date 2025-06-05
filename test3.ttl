@@ -1,0 +1,324 @@
+@prefix : <http://example.org/entities#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cabinet_1 a :KitchenStorageComponent ;
+    dcterms:identifier "n9306" ;
+    rdfs:label "cabinet_1" ;
+    :translation "2.15 -1 0.83" .
+
+:cabinet_2 a :KitchenStorageComponent ;
+    dcterms:identifier "n9472" ;
+    rdfs:label "cabinet_2" ;
+    :translation "-0.11 1.65 0.15" .
+
+:cabinet_3 a :KitchenStorageComponent ;
+    dcterms:identifier "n9703" ;
+    rdfs:label "cabinet_3" ;
+    :translation "2.15 -0.1 1.4" .
+
+:cabinet_4 a :KitchenStorageComponent ;
+    dcterms:identifier "n9989" ;
+    rdfs:label "cabinet_4" ;
+    :translation "0.37 1.647 1.4" .
+
+:cabinet_5 a :KitchenStorageComponent ;
+    dcterms:identifier "n10125" ;
+    rdfs:label "cabinet_5" ;
+    :translation "0.79 1.48 0.15" .
+
+:cabinet a :KitchenStorageComponent ;
+    dcterms:identifier "n10411" ;
+    rdfs:label "cabinet" ;
+    :translation "2.15 -0.12 0.15" .
+
+:fridge a :KitchenStorageComponent ;
+    dcterms:identifier "n9225" ;
+    rdfs:label "fridge" ;
+    :translation "1.8 -1.57 0" .
+
+:worktop_1 a :KitchenComponent ;
+    dcterms:identifier "n7545" ;
+    rdfs:label "worktop_1" ;
+    :translation "0.345 1.31 0.86" .
+
+:worktop_2 a :KitchenComponent ;
+    dcterms:identifier "n7577" ;
+    rdfs:label "worktop_2" ;
+    :translation "0.78 1.531 0.86" .
+
+:worktop_3 a :KitchenComponent ;
+    dcterms:identifier "n7609" ;
+    rdfs:label "worktop_3" ;
+    :translation "0.780001 1.003 0.86" .
+
+:worktop_4 a :KitchenComponent ;
+    dcterms:identifier "n7641" ;
+    rdfs:label "worktop_4" ;
+    :translation "1.22 1.306 0.86" .
+
+:worktop a :KitchenComponent ;
+    dcterms:identifier "n7673" ;
+    rdfs:label "worktop" ;
+    :translation "1.79 0.435 0.86" .
+
+:sink a :KitchenComponent ;
+    dcterms:identifier "n7700" ;
+    rdfs:label "sink" ;
+    :translation "0.78 1.33 0.87" .
+
+:hot plate a :KitchenComponent ;
+    dcterms:identifier "n7732" ;
+    rdfs:label "hot plate" ;
+    :translation "1.62912 1.14971 0.86" .
+
+:oven a :KitchenComponent ;
+    dcterms:identifier "n7744" ;
+    rdfs:label "oven" ;
+    :translation "-0.11 1.24 0.17" .
+
+:table_1 a :KitchenComponent ;
+    dcterms:identifier "n7819" ;
+    rdfs:label "table_1" ;
+    :translation "-1.21 1.31 0" .
+
+:table a :KitchenComponent ;
+    dcterms:identifier "n8069" ;
+    rdfs:label "table" ;
+    :translation "-0.65 -1.43 0" .
+
+:chair_1 a :Object ;
+    dcterms:identifier "n8318" ;
+    rdfs:label "chair_1" ;
+    :translation "-0.64 -0.5 0" .
+
+:chair_2 a :Object ;
+    dcterms:identifier "n8356" ;
+    rdfs:label "chair_2" ;
+    :translation "-0.64 -2.33 0" .
+
+:chair_3 a :Object ;
+    dcterms:identifier "n8394" ;
+    rdfs:label "chair_3" ;
+    :translation "-0.18 -1.87 0.01" .
+
+:chair_4 a :Object ;
+    dcterms:identifier "n8432" ;
+    rdfs:label "chair_4" ;
+    :translation "-1.09 -1.05 0" .
+
+:chair_5 a :Object ;
+    dcterms:identifier "n8470" ;
+    rdfs:label "chair_5" ;
+    :translation "-0.18 -1.05 0" .
+
+:chair a :Object ;
+    dcterms:identifier "n8508" ;
+    rdfs:label "chair" ;
+    :translation "-1.12 -1.87 0" .
+
+:carafe a :Object ;
+    dcterms:identifier "n8546" ;
+    rdfs:label "carafe" ;
+    :translation "-0.630027 -0.734801 0.738809" .
+
+:water bottle_1 a :Object ;
+    dcterms:identifier "n8576" ;
+    rdfs:label "water bottle_1" ;
+    :translation "2.03231 -1.38728 0.583373" .
+
+:water bottle_2 a :Object ;
+    dcterms:identifier "n8599" ;
+    rdfs:label "water bottle_2" ;
+    :translation "-0.480933 -1.15603 0.737804" .
+
+:water bottle_3 a :Object ;
+    dcterms:identifier "n8621" ;
+    rdfs:label "water bottle_3" ;
+    :translation "2.04154 -1.64506 0.583373" .
+
+:water bottle_4 a :Object ;
+    dcterms:identifier "n8643" ;
+    rdfs:label "water bottle_4" ;
+    :translation "2.02614 -1.73192 0.583373" .
+
+:water bottle a :Object ;
+    dcterms:identifier "n8665" ;
+    rdfs:label "water bottle" ;
+    :translation "2.04731 -1.82544 0.583373" .
+
+:beer bottle_1 a :Object ;
+    dcterms:identifier "n8687" ;
+    rdfs:label "beer bottle_1" ;
+    :translation "2.04128 -1.61124 0.297922" .
+
+:can_1 a :Object ;
+    dcterms:identifier "n8710" ;
+    rdfs:label "can_1" ;
+    :translation "1.94171 -1.53737 0.361031" .
+
+:can a :Object ;
+    dcterms:identifier "n8721" ;
+    rdfs:label "can" ;
+    :translation "1.7218 -1.51734 0.361031" .
+
+:beer bottle_2 a :Object ;
+    dcterms:identifier "n8732" ;
+    rdfs:label "beer bottle_2" ;
+    :translation "1.88725 -1.71215 0.297922" .
+
+:beer bottle a :Object ;
+    dcterms:identifier "n8754" ;
+    rdfs:label "beer bottle" ;
+    :translation "1.8952 -1.38446 0.297922" .
+
+:fruit bowl_1 a :Object ;
+    dcterms:identifier "n8776" ;
+    rdfs:label "fruit bowl_1" ;
+    :translation "1.7718 -1.62734 0.0494506" .
+
+:fruit bowl a :Object ;
+    dcterms:identifier "n8794" ;
+    rdfs:label "fruit bowl" ;
+    :translation "-0.685501 -1.754 0.739509" .
+
+:apple_1 a :Object ;
+    dcterms:identifier "n8812" ;
+    rdfs:label "apple_1" ;
+    :translation "-0.742825 -1.69768 0.799176" .
+
+:apple_2 a :Object ;
+    dcterms:identifier "n8823" ;
+    rdfs:label "apple_2" ;
+    :translation "-0.742608 -1.80756 0.79923" .
+
+:apple a :Object ;
+    dcterms:identifier "n8833" ;
+    rdfs:label "apple" ;
+    :translation "-0.642646 -1.81032 0.799203" .
+
+:orange_1 a :Object ;
+    dcterms:identifier "n8843" ;
+    rdfs:label "orange_1" ;
+    :translation "-0.691001 -1.75244 0.864743" .
+
+:orange_2 a :Object ;
+    dcterms:identifier "n8855" ;
+    rdfs:label "orange_2" ;
+    :translation "1.71437 -1.56974 0.10921" .
+
+:orange_3 a :Object ;
+    dcterms:identifier "n8867" ;
+    rdfs:label "orange_3" ;
+    :translation "-0.640069 -1.6967 0.799241" .
+
+:orange_4 a :Object ;
+    dcterms:identifier "n8879" ;
+    rdfs:label "orange_4" ;
+    :translation "1.71796 -1.68487 0.109193" .
+
+:orange_5 a :Object ;
+    dcterms:identifier "n8891" ;
+    rdfs:label "orange_5" ;
+    :translation "1.84408 -1.69977 0.154967" .
+
+:orange_6 a :Object ;
+    dcterms:identifier "n8903" ;
+    rdfs:label "orange_6" ;
+    :translation "1.68945 -1.62817 0.186255" .
+
+:orange_7 a :Object ;
+    dcterms:identifier "n8915" ;
+    rdfs:label "orange_7" ;
+    :translation "1.84559 -1.55346 0.159653" .
+
+:orange a :Object ;
+    dcterms:identifier "n8927" ;
+    rdfs:label "orange" ;
+    :translation "1.79757 -1.62462 0.109011" .
+
+:cookware a :Object ;
+    dcterms:identifier "n8939" ;
+    rdfs:label "cookware" ;
+    :translation "1.66736 1.32016 0.889978" .
+
+:lid a :Object ;
+    dcterms:identifier "n8981" ;
+    rdfs:label "lid" ;
+    :translation "1.66658 1.31968 0.960471" .
+
+:wooden spoon a :Object ;
+    dcterms:identifier "n8999" ;
+    rdfs:label "wooden spoon" ;
+    :translation "1.24856 1.37605 0.889212" .
+
+:fork a :Object ;
+    dcterms:identifier "n9014" ;
+    rdfs:label "fork" ;
+    :translation "-0.970173 -0.900931 0.741142" .
+
+:spoon_1 a :Object ;
+    dcterms:identifier "n9027" ;
+    rdfs:label "spoon_1" ;
+    :translation "-0.969982 -1.2214 0.742841" .
+
+:spoon a :Object ;
+    dcterms:identifier "n9042" ;
+    rdfs:label "spoon" ;
+    :translation "-0.849274 -1.02146 0.742" .
+
+:knife a :Object ;
+    dcterms:identifier "n9057" ;
+    rdfs:label "knife" ;
+    :translation "-0.989983 -1.15121 0.739111" .
+
+:plate a :Object ;
+    dcterms:identifier "n9068" ;
+    rdfs:label "plate" ;
+    :translation "-0.970012 -1.03 0.739941" .
+
+:glass a :Object ;
+    dcterms:identifier "n9083" ;
+    rdfs:label "glass" ;
+    :translation "-0.800252 -1 0.738967" .
+
+:wine glass a :Object ;
+    dcterms:identifier "n9097" ;
+    rdfs:label "wine glass" ;
+    :translation "-0.787671 -1.0978 0.739561" .
+
+:honey jar a :Object ;
+    dcterms:identifier "n9122" ;
+    rdfs:label "honey jar" ;
+    :translation "1.71438 0.70423 0.889402" .
+
+:jam jar_1 a :Object ;
+    dcterms:identifier "n9138" ;
+    rdfs:label "jam jar_1" ;
+    :translation "1.7123 -0.301797 0.889402" .
+
+:jam jar a :Object ;
+    dcterms:identifier "n9157" ;
+    rdfs:label "jam jar" ;
+    :translation "1.92638 0.493697 0.889402" .
+
+:cereal box_1 a :Object ;
+    dcterms:identifier "n9175" ;
+    rdfs:label "cereal box_1" ;
+    :translation "2.02479 0.333777 0.889608" .
+
+:cereal box_2 a :Object ;
+    dcterms:identifier "n9187" ;
+    rdfs:label "cereal box_2" ;
+    :translation "2.05319 0.0376474 0.889608" .
+
+:cereal box a :Object ;
+    dcterms:identifier "n9199" ;
+    rdfs:label "cereal box" ;
+    :translation "1.85996 -0.607243 0.889608" .
+
+:biscuit box a :Object ;
+    dcterms:identifier "n9211" ;
+    rdfs:label "biscuit box" ;
+    :translation "-0.339933 -1.41 0.739843" .
+

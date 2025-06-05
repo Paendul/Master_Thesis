@@ -8,6 +8,7 @@
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix m3lite: <http://purl.org/iot/vocab/m3lite#> .
 
 
 ###################################
@@ -50,6 +51,10 @@
 <https://w3id.org/koro#Action> a rdfs:Class ;
     rdfs:label "Action"@en ;
     rdfs:comment "An action that the robot can perform in the kitchen."@en .
+
+<https://w3id.org/koro#coordinate> a rdfs:Class, m3lite:Coordinates ;
+    rdfs:label "Coordinate"@en ;
+    rdfs:comment "A coordinate in the kitchen space."@en .
 
 
 ###################################
@@ -108,13 +113,13 @@
 
 <https://w3id.org/koro#hasCurrentLocationKC> a rdf:Property ;
     rdfs:domain <https://w3id.org/koro#KitchenComponent> ;
-    rdfs:range koro:coordinate ;
+    rdfs:range <https://w3id.org/koro#coordinate> ;
     rdfs:comment "Indicates the current location of the kitchen component." ;
     rdfs:label "has current location" .
 
 <https://w3id.org/koro#hasTargetLocationKC> a rdf:Property ;
     rdfs:domain <https://w3id.org/koro#KitchenComponent> ;
-    rdfs:range koro:coordinate ;
+    rdfs:range <https://w3id.org/koro#coordinate> ;
     rdfs:comment "Indicates the target location of the kitchen component." ;
     rdfs:label "has target location" .
 
@@ -126,10 +131,13 @@
 
 ### Need to add affordance properties for the kitchen component in hasInteractionType
 
-# Define properties for Kitchen Storage Component
 <https://w3id.org/koro#isFullKSC> a rdf:Property ;
     rdfs:domain <https://w3id.org/koro#KitchenStorageComponent> ;
     rdfs:range rdfs:Boolean ;
     rdfs:comment "Indicates if the kitchen storage component is occupied at full capacity." ;
     rdfs:label "is full" 
 
+
+###################################
+# DATA PROPERTIES
+###################################
