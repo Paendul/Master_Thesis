@@ -1,0 +1,415 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/koro", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/iot/vocab/m3lite", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "en" : "Kitchen Object Reasoning Ontology"
+    },
+    "iri" : "https://w3id.org/koro#",
+    "version" : "1.0.0",
+    "author" : [ "_:genid2147483649" ],
+    "description" : {
+      "en" : "An ontology to model a kitchen environment and properties related to cleaning tasks for a robot agent."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483649",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-05-28",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "koro",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/koro#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Kitchen Object Reasoning Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/koro#Action",
+    "baseIri" : "https://w3id.org/koro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action",
+      "en" : "Action"
+    },
+    "comment" : {
+      "en" : "An action that the robot can perform in the kitchen."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/koro#KitchenComponent",
+    "baseIri" : "https://w3id.org/koro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KitchenComponent",
+      "en" : "Kitchen Component"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "en" : "A component in the kitchen where objects can be placed."
+    },
+    "id" : "2"
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "9" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/koro#KitchenStorageComponent",
+    "baseIri" : "https://w3id.org/koro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KitchenStorageComponent",
+      "en" : "Kitchen Storage Component"
+    },
+    "comment" : {
+      "en" : "A kitchen component in which objects can be stored."
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/koro#Object",
+    "baseIri" : "https://w3id.org/koro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object",
+      "en" : "Object"
+    },
+    "comment" : {
+      "en" : "An object in the kitchen that can be manipulated by the robot."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://purl.org/iot/vocab/m3lite#Coordinates",
+    "baseIri" : "http://purl.org/iot/vocab/m3lite",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "Coordinates"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Boolean",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Boolean"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/koro#coordinate",
+    "baseIri" : "https://w3id.org/koro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "coordinate",
+      "en" : "Coordinate"
+    },
+    "comment" : {
+      "en" : "A coordinate in the kitchen space."
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#float",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/koro#hasInteractionType",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasInteractionType",
+      "undefined" : "has interaction type"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the type of interaction the robot can have with the kitchen component."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/koro#hasCurrentLocation",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasCurrentLocation",
+      "undefined" : "has current location"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates the current location of the object as a :KitchenComponent."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/koro#hasTargetLocationKC",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasTargetLocationKC",
+      "undefined" : "has target location"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the target location of the kitchen component."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "domain" : "14",
+    "range" : "12",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "1",
+      "undefined" : "is a"
+    }
+  }, {
+    "iri" : "https://w3id.org/koro#hasCurrentLocationKC",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasCurrentLocationKC",
+      "undefined" : "has current location"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the current location of the kitchen component."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/koro#isTrash",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isTrash",
+      "undefined" : "is trash"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates if the object is trash."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/koro#isDisposable",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isDisposable",
+      "undefined" : "is disposable"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates if the object is disposable."
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/koro#isDirtyKC",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isDirtyKC",
+      "undefined" : "is dirty"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates if the kitchen component is dirty."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/koro#isFullKSC",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isFullKSC",
+      "undefined" : "is full"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Indicates if the kitchen storage component is occupied at full capacity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/koro#hasTargetLocation",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasTargetLocation",
+      "undefined" : "has target location"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates the target location of the object as a :KitchenStorageComponent."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/koro#isClearKC",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isClearKC",
+      "undefined" : "is clear"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates if the surface of the kitchen component is clear."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/koro#isDirty",
+    "baseIri" : "https://w3id.org/koro",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isDirty",
+      "undefined" : "is dirty"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates if the object is dirty."
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  } ]
+}

@@ -1,0 +1,229 @@
+<https://w3id.org/koro#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/koro#> <http://purl.org/dc/elements/1.1/creator> _:genid1 .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Jade Martin" .
+_:genid1 <http://xmlns.com/foaf/0.1/mbox> "j.o.martin@student.vu.nl" .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/koro#> <http://purl.org/dc/elements/1.1/description> "An ontology to model a kitchen environment and properties related to cleaning tasks for a robot agent."@en .
+<https://w3id.org/koro#> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/koro#> <http://purl.org/dc/elements/1.1/title> "Kitchen Object Reasoning Ontology"@en .
+<https://w3id.org/koro#> <http://purl.org/dc/terms/created> "2025-05-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/koro#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "koro" .
+<https://w3id.org/koro#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/koro#" .
+<https://w3id.org/koro#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/koro#hasCurrentLocation
+<https://w3id.org/koro#hasCurrentLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#hasCurrentLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#Object> .
+<https://w3id.org/koro#hasCurrentLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/koro#KitchenComponent> .
+<https://w3id.org/koro#hasCurrentLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the current location of the object as a :KitchenComponent." .
+<https://w3id.org/koro#hasCurrentLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has current location" .
+# 
+# https://w3id.org/koro#hasCurrentLocationKC
+<https://w3id.org/koro#hasCurrentLocationKC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#hasCurrentLocationKC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#KitchenComponent> .
+<https://w3id.org/koro#hasCurrentLocationKC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/koro#coordinate> .
+<https://w3id.org/koro#hasCurrentLocationKC> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the current location of the kitchen component." .
+<https://w3id.org/koro#hasCurrentLocationKC> <http://www.w3.org/2000/01/rdf-schema#label> "has current location" .
+# 
+# https://w3id.org/koro#hasTargetLocation
+<https://w3id.org/koro#hasTargetLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#hasTargetLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#Object> .
+<https://w3id.org/koro#hasTargetLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/koro#KitchenStorageComponent> .
+<https://w3id.org/koro#hasTargetLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the target location of the object as a :KitchenStorageComponent." .
+<https://w3id.org/koro#hasTargetLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has target location" .
+# 
+# https://w3id.org/koro#hasTargetLocationKC
+<https://w3id.org/koro#hasTargetLocationKC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#hasTargetLocationKC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#KitchenComponent> .
+<https://w3id.org/koro#hasTargetLocationKC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/koro#coordinate> .
+<https://w3id.org/koro#hasTargetLocationKC> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the target location of the kitchen component." .
+<https://w3id.org/koro#hasTargetLocationKC> <http://www.w3.org/2000/01/rdf-schema#label> "has target location" .
+# 
+# https://w3id.org/koro#isClearKC
+<https://w3id.org/koro#isClearKC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#isClearKC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#KitchenComponent> .
+<https://w3id.org/koro#isClearKC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Boolean> .
+<http://www.w3.org/2000/01/rdf-schema#Boolean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/koro#isClearKC> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the surface of the kitchen component is clear." .
+<https://w3id.org/koro#isClearKC> <http://www.w3.org/2000/01/rdf-schema#label> "is clear" .
+# 
+# https://w3id.org/koro#isDirty
+<https://w3id.org/koro#isDirty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#isDirty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#Object> .
+<https://w3id.org/koro#isDirty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Boolean> .
+<https://w3id.org/koro#isDirty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#float> .
+<http://www.w3.org/2000/01/rdf-schema#float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/koro#isDirty> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the object is dirty." .
+<https://w3id.org/koro#isDirty> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the volume of the object." .
+<https://w3id.org/koro#isDirty> <http://www.w3.org/2000/01/rdf-schema#label> "has volume" .
+<https://w3id.org/koro#isDirty> <http://www.w3.org/2000/01/rdf-schema#label> "is dirty" .
+# 
+# https://w3id.org/koro#isDirtyKC
+<https://w3id.org/koro#isDirtyKC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#isDirtyKC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#KitchenComponent> .
+<https://w3id.org/koro#isDirtyKC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Boolean> .
+<https://w3id.org/koro#isDirtyKC> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the kitchen component is dirty." .
+<https://w3id.org/koro#isDirtyKC> <http://www.w3.org/2000/01/rdf-schema#label> "is dirty" .
+# 
+# https://w3id.org/koro#isDisposable
+<https://w3id.org/koro#isDisposable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#isDisposable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#Object> .
+<https://w3id.org/koro#isDisposable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Boolean> .
+<https://w3id.org/koro#isDisposable> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the object is disposable." .
+<https://w3id.org/koro#isDisposable> <http://www.w3.org/2000/01/rdf-schema#label> "is disposable" .
+# 
+# https://w3id.org/koro#isFullKSC
+<https://w3id.org/koro#isFullKSC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#isFullKSC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#KitchenStorageComponent> .
+<https://w3id.org/koro#isFullKSC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Boolean> .
+<https://w3id.org/koro#isFullKSC> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the kitchen storage component is occupied at full capacity." .
+<https://w3id.org/koro#isFullKSC> <http://www.w3.org/2000/01/rdf-schema#label> "is full" .
+# 
+# https://w3id.org/koro#isTrash
+<https://w3id.org/koro#isTrash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/koro#isTrash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#Object> .
+<https://w3id.org/koro#isTrash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Boolean> .
+<https://w3id.org/koro#isTrash> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the object is trash." .
+<https://w3id.org/koro#isTrash> <http://www.w3.org/2000/01/rdf-schema#label> "is trash" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/koro#hasInteractionType
+<https://w3id.org/koro#hasInteractionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/koro#hasInteractionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#KitchenComponent> .
+<https://w3id.org/koro#hasInteractionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/koro#hasInteractionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of interaction the robot can have with the kitchen component." .
+<https://w3id.org/koro#hasInteractionType> <http://www.w3.org/2000/01/rdf-schema#label> "has interaction type" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/iot/vocab/m3lite#Coordinates
+<http://purl.org/iot/vocab/m3lite#Coordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Boolean
+# 
+# http://www.w3.org/2000/01/rdf-schema#float
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+# https://w3id.org/koro#Action
+<https://w3id.org/koro#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/koro#Action> <http://www.w3.org/2000/01/rdf-schema#comment> "An action that the robot can perform in the kitchen."@en .
+<https://w3id.org/koro#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"@en .
+# 
+# https://w3id.org/koro#KitchenComponent
+<https://w3id.org/koro#KitchenComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/koro#KitchenComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "A component in the kitchen where objects can be placed."@en .
+<https://w3id.org/koro#KitchenComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Kitchen Component"@en .
+# 
+# https://w3id.org/koro#KitchenStorageComponent
+<https://w3id.org/koro#KitchenStorageComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/koro#KitchenStorageComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/koro#KitchenComponent> .
+<https://w3id.org/koro#KitchenStorageComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "A kitchen component in which objects can be stored."@en .
+<https://w3id.org/koro#KitchenStorageComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Kitchen Storage Component"@en .
+# 
+# https://w3id.org/koro#Object
+<https://w3id.org/koro#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/koro#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "An object in the kitchen that can be manipulated by the robot."@en .
+<https://w3id.org/koro#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Object"@en .
+# 
+# https://w3id.org/koro#coordinate
+<https://w3id.org/koro#coordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/koro#coordinate
+<https://w3id.org/koro#coordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/koro#coordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/iot/vocab/m3lite#Coordinates> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/koro#coordinate> <http://www.w3.org/2000/01/rdf-schema#comment> "A coordinate in the kitchen space."@en .
+<https://w3id.org/koro#coordinate> <http://www.w3.org/2000/01/rdf-schema#label> "Coordinate"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
