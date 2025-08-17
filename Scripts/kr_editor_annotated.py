@@ -5,6 +5,8 @@
 ######
 
 # Version for kg_annotated
+# use: python kg_editor_annotated.py
+# output file: final_kg_annotated.ttl
 
 from rdflib import Graph, Namespace, URIRef, BNode
 from itertools import combinations
@@ -12,7 +14,7 @@ from rdflib.namespace import RDF
 
 # Load the RDF graph
 g = Graph()
-g.parse("kg_annotated.ttl", format="turtle")  # Replace with your actual file name
+g.parse("../Inputs/kg_annotated.ttl", format="turtle")  # Replace with your actual file name
 
 # Define the namespace
 KORO = Namespace("http://w3id.org/koro#")
@@ -125,4 +127,4 @@ for (uri1, t1), (uri2, t2) in combinations(entities, 2):
 
 
 # Save the updated graph to a new file
-g.serialize(destination="updated_kg_annotated.ttl", format="turtle")
+g.serialize(destination="../Outputs/final_kg_annotated.ttl", format="turtle")

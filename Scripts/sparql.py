@@ -1,8 +1,10 @@
+# This script contains test queries for competency questions
+
 from rdflib import Graph, Namespace
 
 # Load your ontology
 g = Graph()
-g.parse("shapetest.ttl", format="turtle")
+g.parse("../Outputs/final_kg_base.ttl", format="turtle")
 
 # Define namespace
 koro = Namespace("http://w3id.org/koro#")

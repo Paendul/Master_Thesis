@@ -5,10 +5,12 @@
 # Version for kg_annotated
 
 # USAGE: python3 make_entity_script.py output.ttl
+# Practical output file name: kg_annotated.ttl
 
 import sys
 import pandas as pd
 import re
+import os
 
 def make_turtle_entity(nid, name, translation, entity_type, target, translation_lookup):
     entity_uri = f":{name.replace('(', '_').replace(')', '')}"
@@ -55,7 +57,11 @@ def main(output_path):
         if pd.notna(row['name']) and pd.notna(row['translation']):
             translation_lookup[row['name']] = row['translation']
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    # Ensure output_path is just the filename, not a full path
+    output_filename = os.path.basename(output_path)
+    output_full_path = os.path.join('../Inputs/', output_filename)
+
+    with open(output_full_path, "w", encoding="utf-8") as f:
         f.write(
             "@prefix koro: <http://w3id.org/koro#> .\n"
             "@prefix owl: <http://www.w3.org/2002/07/owl#> .\n"

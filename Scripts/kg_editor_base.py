@@ -5,6 +5,8 @@
 ######
 
 # Version for kg_base
+# use: python kg_editor_base.py
+# output file: final_kg_base.ttl
 
 
 from rdflib import Graph, Namespace, URIRef
@@ -14,7 +16,7 @@ from rdflib import BNode
 
 # Load the RDF graph
 g = Graph()
-g.parse("kg_base.ttl", format="turtle")  # Replace with your actual file name
+g.parse("../Inputs/kg_base.ttl", format="turtle")  # Replace with your actual file name
 
 # Define the namespace
 KORO = Namespace("http://w3id.org/koro#")
@@ -171,4 +173,4 @@ for s in g.subjects():
 
 
 # Save the updated graph to a new file
-g.serialize(destination="updated_kg_base.ttl", format="turtle")
+g.serialize(destination="../Outputs/final_kg_base.ttl", format="turtle")

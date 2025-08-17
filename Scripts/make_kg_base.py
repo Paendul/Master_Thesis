@@ -5,10 +5,12 @@
 # Version for kg_base
 
 # USAGE: python3 make_entity_script.py output.ttl
+# Practical output file name: kg_base.ttl
 
 import sys
 import pandas as pd
 import re
+import os
 
 def make_turtle_entity(nid, name, translation, entity_type):
     entity_uri = f":{name.replace('(', '_').replace(')', '')}"
@@ -35,7 +37,12 @@ def make_turtle_entity(nid, name, translation, entity_type):
 def main(output_path):
     csv_content = open('../Inputs/entities_annotated.csv')
     df = pd.read_csv(csv_content, header=0)
-    with open(output_path, "w", encoding="utf-8") as f:
+
+    # Ensure output_path is just the filename, not a full path
+    output_filename = os.path.basename(output_path)
+    output_full_path = os.path.join('../Inputs/', output_filename)
+
+    with open(output_full_path, "w", encoding="utf-8") as f:
         f.write("@prefix koro: <http://w3id.org/koro#> .\n"
                 "@prefix owl: <http://www.w3.org/2002/07/owl#> .\n"
                 "@prefix dcterms: <http://purl.org/dc/terms/> .\n"
