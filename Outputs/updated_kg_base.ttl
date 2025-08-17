@@ -1,0 +1,518 @@
+@prefix bbccore: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix koro: <http://w3id.org/koro#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+koro:apple a koro:Component ;
+    rdfs:label "apple" ;
+    dcterms:identifier "n8833" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.642646 ;
+                            koro:translationY -1.81032 ;
+                            koro:translationZ 0.799203 ] ] ] ;
+    bbccore:preferredLabel "apple" .
+
+koro:apple_1 a koro:Component ;
+    rdfs:label "apple 1" ;
+    dcterms:identifier "n8812" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.742825 ;
+                            koro:translationY -1.69768 ;
+                            koro:translationZ 0.799176 ] ] ] ;
+    bbccore:preferredLabel "apple" .
+
+koro:apple_2 a koro:Component ;
+    rdfs:label "apple 2" ;
+    dcterms:identifier "n8823" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.742608 ;
+                            koro:translationY -1.80756 ;
+                            koro:translationZ 0.79923 ] ] ] ;
+    bbccore:preferredLabel "apple" .
+
+koro:beer_bottle a koro:Component ;
+    rdfs:label "beer bottle" ;
+    dcterms:identifier "n8754" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.8952 ;
+                            koro:translationY -1.38446 ;
+                            koro:translationZ 0.297922 ] ] ] ;
+    bbccore:preferredLabel "beer bottle" .
+
+koro:beer_bottle_1 a koro:Component ;
+    rdfs:label "beer bottle 1" ;
+    dcterms:identifier "n8687" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.04128 ;
+                            koro:translationY -1.61124 ;
+                            koro:translationZ 0.297922 ] ] ] ;
+    bbccore:preferredLabel "beer bottle" .
+
+koro:beer_bottle_2 a koro:Component ;
+    rdfs:label "beer bottle 2" ;
+    dcterms:identifier "n8732" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.88725 ;
+                            koro:translationY -1.71215 ;
+                            koro:translationZ 0.297922 ] ] ] ;
+    bbccore:preferredLabel "beer bottle" .
+
+koro:biscuit_box a koro:Component ;
+    rdfs:label "biscuit box" ;
+    dcterms:identifier "n9211" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.339933 ;
+                            koro:translationY -1.41 ;
+                            koro:translationZ 0.739843 ] ] ] ;
+    bbccore:preferredLabel "biscuit box" .
+
+koro:cabinet a koro:Component ;
+    rdfs:label "cabinet" ;
+    dcterms:identifier "n10411" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.15 ;
+                            koro:translationY -0.12 ;
+                            koro:translationZ 0.15 ] ] ] ;
+    bbccore:preferredLabel "cabinet" .
+
+koro:cabinet_1 a koro:Component ;
+    rdfs:label "cabinet 1" ;
+    dcterms:identifier "n9306" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.15 ;
+                            koro:translationY -1 ;
+                            koro:translationZ 0.83 ] ] ] ;
+    bbccore:preferredLabel "cabinet" .
+
+koro:cabinet_2 a koro:Component ;
+    rdfs:label "cabinet 2" ;
+    dcterms:identifier "n9472" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.11 ;
+                            koro:translationY 1.65 ;
+                            koro:translationZ 0.15 ] ] ] ;
+    bbccore:preferredLabel "cabinet" .
+
+koro:cabinet_3 a koro:Component ;
+    rdfs:label "cabinet 3" ;
+    dcterms:identifier "n9703" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.15 ;
+                            koro:translationY -0.1 ;
+                            koro:translationZ 1.4 ] ] ] ;
+    bbccore:preferredLabel "cabinet" .
+
+koro:cabinet_4 a koro:Component ;
+    rdfs:label "cabinet 4" ;
+    dcterms:identifier "n9989" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 0.37 ;
+                            koro:translationY 1.647 ;
+                            koro:translationZ 1.4 ] ] ] ;
+    bbccore:preferredLabel "cabinet" .
+
+koro:cabinet_5 a koro:Component ;
+    rdfs:label "cabinet 5" ;
+    dcterms:identifier "n10125" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 0.79 ;
+                            koro:translationY 1.48 ;
+                            koro:translationZ 0.15 ] ] ] ;
+    bbccore:preferredLabel "cabinet" .
+
+koro:can a koro:Component ;
+    rdfs:label "can" ;
+    dcterms:identifier "n8721" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.7218 ;
+                            koro:translationY -1.51734 ;
+                            koro:translationZ 0.361031 ] ] ] ;
+    bbccore:preferredLabel "can" .
+
+koro:can_1 a koro:Component ;
+    rdfs:label "can 1" ;
+    dcterms:identifier "n8710" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.94171 ;
+                            koro:translationY -1.53737 ;
+                            koro:translationZ 0.361031 ] ] ] ;
+    bbccore:preferredLabel "can" .
+
+koro:carafe a koro:Component ;
+    rdfs:label "carafe" ;
+    dcterms:identifier "n8546" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.630027 ;
+                            koro:translationY -0.734801 ;
+                            koro:translationZ 0.738809 ] ] ] ;
+    bbccore:preferredLabel "carafe" .
+
+koro:cereal_box a koro:Component ;
+    rdfs:label "cereal box" ;
+    dcterms:identifier "n9199" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.85996 ;
+                            koro:translationY -0.607243 ;
+                            koro:translationZ 0.889608 ] ] ] ;
+    bbccore:preferredLabel "cereal box" .
+
+koro:cereal_box_1 a koro:Component ;
+    rdfs:label "cereal box 1" ;
+    dcterms:identifier "n9175" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.02479 ;
+                            koro:translationY 0.333777 ;
+                            koro:translationZ 0.889608 ] ] ] ;
+    bbccore:preferredLabel "cereal box" .
+
+koro:cereal_box_2 a koro:Component ;
+    rdfs:label "cereal box 2" ;
+    dcterms:identifier "n9187" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.05319 ;
+                            koro:translationY 0.0376474 ;
+                            koro:translationZ 0.889608 ] ] ] ;
+    bbccore:preferredLabel "cereal box" .
+
+koro:chair a koro:Component ;
+    rdfs:label "chair" ;
+    dcterms:identifier "n8508" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -1.12 ;
+                            koro:translationY -1.87 ;
+                            koro:translationZ 0 ] ] ] ;
+    bbccore:preferredLabel "chair" .
+
+koro:chair_1 a koro:Component ;
+    rdfs:label "chair 1" ;
+    dcterms:identifier "n8318" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.64 ;
+                            koro:translationY -0.5 ;
+                            koro:translationZ 0 ] ] ] ;
+    bbccore:preferredLabel "chair" .
+
+koro:chair_2 a koro:Component ;
+    rdfs:label "chair 2" ;
+    dcterms:identifier "n8356" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.64 ;
+                            koro:translationY -2.33 ;
+                            koro:translationZ 0 ] ] ] ;
+    bbccore:preferredLabel "chair" .
+
+koro:chair_3 a koro:Component ;
+    rdfs:label "chair 3" ;
+    dcterms:identifier "n8394" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.18 ;
+                            koro:translationY -1.87 ;
+                            koro:translationZ 0.01 ] ] ] ;
+    bbccore:preferredLabel "chair" .
+
+koro:chair_4 a koro:Component ;
+    rdfs:label "chair 4" ;
+    dcterms:identifier "n8432" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -1.09 ;
+                            koro:translationY -1.05 ;
+                            koro:translationZ 0 ] ] ] ;
+    bbccore:preferredLabel "chair" .
+
+koro:chair_5 a koro:Component ;
+    rdfs:label "chair 5" ;
+    dcterms:identifier "n8470" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.18 ;
+                            koro:translationY -1.05 ;
+                            koro:translationZ 0 ] ] ] ;
+    bbccore:preferredLabel "chair" .
+
+koro:cookware a koro:Component ;
+    rdfs:label "cookware" ;
+    dcterms:identifier "n8939" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.66736 ;
+                            koro:translationY 1.32016 ;
+                            koro:translationZ 0.889978 ] ] ] ;
+    bbccore:preferredLabel "cookware" .
+
+koro:fork a koro:Component ;
+    rdfs:label "fork" ;
+    dcterms:identifier "n9014" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.970173 ;
+                            koro:translationY -0.900931 ;
+                            koro:translationZ 0.741142 ] ] ] ;
+    bbccore:preferredLabel "fork" .
+
+koro:fridge a koro:Component ;
+    rdfs:label "fridge" ;
+    dcterms:identifier "n9225" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.8 ;
+                            koro:translationY -1.57 ;
+                            koro:translationZ 0 ] ] ] ;
+    bbccore:preferredLabel "fridge" .
+
+koro:fruit_bowl a koro:Component ;
+    rdfs:label "fruit bowl" ;
+    dcterms:identifier "n8794" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.685501 ;
+                            koro:translationY -1.754 ;
+                            koro:translationZ 0.739509 ] ] ] ;
+    bbccore:preferredLabel "fruit bowl" .
+
+koro:fruit_bowl_1 a koro:Component ;
+    rdfs:label "fruit bowl 1" ;
+    dcterms:identifier "n8776" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.7718 ;
+                            koro:translationY -1.62734 ;
+                            koro:translationZ 0.0494506 ] ] ] ;
+    bbccore:preferredLabel "fruit bowl" .
+
+koro:glass a koro:Component ;
+    rdfs:label "glass" ;
+    dcterms:identifier "n9083" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.800252 ;
+                            koro:translationY -1 ;
+                            koro:translationZ 0.738967 ] ] ] ;
+    bbccore:preferredLabel "glass" .
+
+koro:honey_jar a koro:Component ;
+    rdfs:label "honey jar" ;
+    dcterms:identifier "n9122" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.71438 ;
+                            koro:translationY 0.70423 ;
+                            koro:translationZ 0.889402 ] ] ] ;
+    bbccore:preferredLabel "honey jar" .
+
+koro:hot_plate a koro:Component ;
+    rdfs:label "hot plate" ;
+    dcterms:identifier "n7732" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.62912 ;
+                            koro:translationY 1.14971 ;
+                            koro:translationZ 0.86 ] ] ] ;
+    bbccore:preferredLabel "hot plate" .
+
+koro:jam_jar a koro:Component ;
+    rdfs:label "jam jar" ;
+    dcterms:identifier "n9157" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.92638 ;
+                            koro:translationY 0.493697 ;
+                            koro:translationZ 0.889402 ] ] ] ;
+    bbccore:preferredLabel "jam jar" .
+
+koro:jam_jar_1 a koro:Component ;
+    rdfs:label "jam jar 1" ;
+    dcterms:identifier "n9138" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.7123 ;
+                            koro:translationY -0.301797 ;
+                            koro:translationZ 0.889402 ] ] ] ;
+    bbccore:preferredLabel "jam jar" .
+
+koro:knife a koro:Component ;
+    rdfs:label "knife" ;
+    dcterms:identifier "n9057" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.989983 ;
+                            koro:translationY -1.15121 ;
+                            koro:translationZ 0.739111 ] ] ] ;
+    bbccore:preferredLabel "knife" .
+
+koro:lid a koro:Component ;
+    rdfs:label "lid" ;
+    dcterms:identifier "n8981" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.66658 ;
+                            koro:translationY 1.31968 ;
+                            koro:translationZ 0.960471 ] ] ] ;
+    bbccore:preferredLabel "lid" .
+
+koro:orange a koro:Component ;
+    rdfs:label "orange" ;
+    dcterms:identifier "n8927" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.79757 ;
+                            koro:translationY -1.62462 ;
+                            koro:translationZ 0.109011 ] ] ] ;
+    bbccore:preferredLabel "orange" .
+
+koro:orange_1 a koro:Component ;
+    rdfs:label "orange 1" ;
+    dcterms:identifier "n8843" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.691001 ;
+                            koro:translationY -1.75244 ;
+                            koro:translationZ 0.864743 ] ] ] ;
+    bbccore:preferredLabel "orange" .
+
+koro:orange_2 a koro:Component ;
+    rdfs:label "orange 2" ;
+    dcterms:identifier "n8855" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.71437 ;
+                            koro:translationY -1.56974 ;
+                            koro:translationZ 0.10921 ] ] ] ;
+    bbccore:preferredLabel "orange" .
+
+koro:orange_3 a koro:Component ;
+    rdfs:label "orange 3" ;
+    dcterms:identifier "n8867" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.640069 ;
+                            koro:translationY -1.6967 ;
+                            koro:translationZ 0.799241 ] ] ] ;
+    bbccore:preferredLabel "orange" .
+
+koro:orange_4 a koro:Component ;
+    rdfs:label "orange 4" ;
+    dcterms:identifier "n8879" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.71796 ;
+                            koro:translationY -1.68487 ;
+                            koro:translationZ 0.109193 ] ] ] ;
+    bbccore:preferredLabel "orange" .
+
+koro:orange_5 a koro:Component ;
+    rdfs:label "orange 5" ;
+    dcterms:identifier "n8891" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.84408 ;
+                            koro:translationY -1.69977 ;
+                            koro:translationZ 0.154967 ] ] ] ;
+    bbccore:preferredLabel "orange" .
+
+koro:orange_6 a koro:Component ;
+    rdfs:label "orange 6" ;
+    dcterms:identifier "n8903" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.68945 ;
+                            koro:translationY -1.62817 ;
+                            koro:translationZ 0.186255 ] ] ] ;
+    bbccore:preferredLabel "orange" .
+
+koro:orange_7 a koro:Component ;
+    rdfs:label "orange 7" ;
+    dcterms:identifier "n8915" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.84559 ;
+                            koro:translationY -1.55346 ;
+                            koro:translationZ 0.159653 ] ] ] ;
+    bbccore:preferredLabel "orange" .
+
+koro:oven a koro:Component ;
+    rdfs:label "oven" ;
+    dcterms:identifier "n7744" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.11 ;
+                            koro:translationY 1.24 ;
+                            koro:translationZ 0.17 ] ] ] ;
+    bbccore:preferredLabel "oven" .
+
+koro:plate a koro:Component ;
+    rdfs:label "plate" ;
+    dcterms:identifier "n9068" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.970012 ;
+                            koro:translationY -1.03 ;
+                            koro:translationZ 0.739941 ] ] ] ;
+    bbccore:preferredLabel "plate" .
+
+koro:sink a koro:Component ;
+    rdfs:label "sink" ;
+    dcterms:identifier "n7700" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 0.78 ;
+                            koro:translationY 1.33 ;
+                            koro:translationZ 0.87 ] ] ] ;
+    bbccore:preferredLabel "sink" .
+
+koro:spoon a koro:Component ;
+    rdfs:label "spoon" ;
+    dcterms:identifier "n9042" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.849274 ;
+                            koro:translationY -1.02146 ;
+                            koro:translationZ 0.742 ] ] ] ;
+    bbccore:preferredLabel "spoon" .
+
+koro:spoon_1 a koro:Component ;
+    rdfs:label "spoon 1" ;
+    dcterms:identifier "n9027" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.969982 ;
+                            koro:translationY -1.2214 ;
+                            koro:translationZ 0.742841 ] ] ] ;
+    bbccore:preferredLabel "spoon" .
+
+koro:table a koro:Component ;
+    rdfs:label "table" ;
+    dcterms:identifier "n8069" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.65 ;
+                            koro:translationY -1.43 ;
+                            koro:translationZ 0 ] ] ] ;
+    bbccore:preferredLabel "table" .
+
+koro:table_1 a koro:Component ;
+    rdfs:label "table 1" ;
+    dcterms:identifier "n7819" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -1.21 ;
+                            koro:translationY 1.31 ;
+                            koro:translationZ 0 ] ] ] ;
+    bbccore:preferredLabel "table" .
+
+koro:water_bottle a koro:Component ;
+    rdfs:label "water bottle" ;
+    dcterms:identifier "n8665" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.04731 ;
+                            koro:translationY -1.82544 ;
+                            koro:translationZ 0.583373 ] ] ] ;
+    bbccore:preferredLabel "water bottle" .
+
+koro:water_bottle_1 a koro:Component ;
+    rdfs:label "water bottle 1" ;
+    dcterms:identifier "n8576" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.03231 ;
+                            koro:translationY -1.38728 ;
+                            koro:translationZ 0.583373 ] ] ] ;
+    bbccore:preferredLabel "water bottle" .
+
+koro:water_bottle_2 a koro:Component ;
+    rdfs:label "water bottle 2" ;
+    dcterms:identifier "n8599" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.480933 ;
+                            koro:translationY -1.15603 ;
+                            koro:translationZ 0.737804 ] ] ] ;
+    bbccore:preferredLabel "water bottle" .
+
+koro:water_bottle_3 a koro:Component ;
+    rdfs:label "water bottle 3" ;
+    dcterms:identifier "n8621" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.04154 ;
+                            koro:translationY -1.64506 ;
+                            koro:translationZ 0.583373 ] ] ] ;
+    bbccore:preferredLabel "water bottle" .
+
+koro:water_bottle_4 a koro:Component ;
+    rdfs:label "water bottle 4" ;
+    dcterms:identifier "n8643" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 2.02614 ;
+                            koro:translationY -1.73192 ;
+                            koro:translationZ 0.583373 ] ] ] ;
+    bbccore:preferredLabel "water bottle" .
+
+koro:wine_glass a koro:Component ;
+    rdfs:label "wine glass" ;
+    dcterms:identifier "n9097" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX -0.787671 ;
+                            koro:translationY -1.0978 ;
+                            koro:translationZ 0.739561 ] ] ] ;
+    bbccore:preferredLabel "wine glass" .
+
+koro:wooden_spoon a koro:Component ;
+    rdfs:label "wooden spoon" ;
+    dcterms:identifier "n8999" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.24856 ;
+                            koro:translationY 1.37605 ;
+                            koro:translationZ 0.889212 ] ] ] ;
+    bbccore:preferredLabel "wooden spoon" .
+
+koro:worktop a koro:Component ;
+    rdfs:label "worktop" ;
+    dcterms:identifier "n7673" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.79 ;
+                            koro:translationY 0.435 ;
+                            koro:translationZ 0.86 ] ] ] ;
+    bbccore:preferredLabel "worktop" .
+
+koro:worktop_1 a koro:Component ;
+    rdfs:label "worktop 1" ;
+    dcterms:identifier "n7545" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 0.345 ;
+                            koro:translationY 1.31 ;
+                            koro:translationZ 0.86 ] ] ] ;
+    bbccore:preferredLabel "worktop" .
+
+koro:worktop_2 a koro:Component ;
+    rdfs:label "worktop 2" ;
+    dcterms:identifier "n7577" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 0.78 ;
+                            koro:translationY 1.531 ;
+                            koro:translationZ 0.86 ] ] ] ;
+    bbccore:preferredLabel "worktop" .
+
+koro:worktop_3 a koro:Component ;
+    rdfs:label "worktop 3" ;
+    dcterms:identifier "n7609" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 0.780001 ;
+                            koro:translationY 1.003 ;
+                            koro:translationZ 0.86 ] ] ] ;
+    bbccore:preferredLabel "worktop" .
+
+koro:worktop_4 a koro:Component ;
+    rdfs:label "worktop 4" ;
+    dcterms:identifier "n7641" ;
+    koro:hasLocation [ koro:hasCurrentLocation [ koro:hasTranslation [ koro:translationX 1.22 ;
+                            koro:translationY 1.306 ;
+                            koro:translationZ 0.86 ] ] ] ;
+    bbccore:preferredLabel "worktop" .
+

@@ -1,0 +1,78 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix koro: <http://w3id.org/koro#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# defines a shape that checks that an Object's unique target location is a Storage
+koro:ObjectTargetLocationShape a sh:NodeShape ;
+    sh:targetClass koro:Object ;
+    sh:property [
+        sh:path (koro:hasLocation koro:hasTargetLocation koro:hasLocationComponent) ;
+        sh:class koro:Storage ;
+        sh:maxCount 1 ;
+    ] .
+
+
+# defines a shape that checks that an object has a current location
+koro:ObjectCurrentLocationShape a sh:NodeShape ;
+    sh:targetClass koro:Object ;
+    sh:property [
+        sh:path (koro:hasLocation koro:hasCurrentLocation) ;
+        sh:node [
+            a sh:NodeShape ;
+            sh:property [
+                sh:path koro:hasLocationComponent ;
+                sh:maxCount 1 ;
+            ] ;
+            sh:property [
+                sh:path koro:hasTranslation ;
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+            ] ;
+        ] ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+# defines a shape that checks that a component has a current location
+koro:ObjectCurrentLocationShape a sh:NodeShape ;
+    sh:targetClass koro:Component ;
+    sh:property [
+        sh:path (koro:hasLocation koro:hasCurrentLocation) ;
+        sh:node [
+            a sh:NodeShape ;
+            sh:property [
+                sh:path koro:hasLocationComponent ;
+                sh:maxCount 1 ;
+            ] ;
+            sh:property [
+                sh:path koro:hasTranslation ;
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+            ] ;
+        ] ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+# defines a shape that checks that an object is not a furniture
+koro:ObjectDisjointFurnitureShape a sh:NodeShape ;
+    sh:targetClass koro:Object ;
+    sh:not [
+        sh:class koro:Furniture ;
+    ] .
+
+# defines a shape that checks that a component has exactly one identifier
+koro:ComponentIdentifierShape a sh:NodeShape ;
+    sh:targetClass koro:Component ;
+    sh:property [
+        sh:path dcterms:identifier ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype rdfs:Literal ;
+    ] .
+
+
+
+

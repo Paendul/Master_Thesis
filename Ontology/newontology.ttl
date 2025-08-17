@@ -1,0 +1,159 @@
+@prefix koro: <http://w3id.org/koro#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix m3lite: <http://purl.org/iot/vocab/m3lite#> .
+@prefix bbccore: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+
+
+###################################
+# ONTOLOGY METADATA
+###################################
+
+<https://w3id.org/koro#> a owl:Ontology ;
+    dc:title "Kitchen Object Reasoning Ontology"@en ;
+    dc:description "An ontology to model a kitchen environment and properties related to cleaning tasks for a robot agent."@en ;
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Jade Martin" ;
+        foaf:mbox "j.o.martin@student.vu.nl" ;] ;
+    dcterms:created "2025-05-28"^^xsd:date ;
+    owl:versionInfo "1.0.0" ;
+    dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "koro";
+    vann:preferredNamespaceUri "https://w3id.org/koro#" .
+
+
+
+###################################
+# CLASSES
+###################################
+
+<https://w3id.org/koro#KitchenEnvironment> a rdfs:Class, owl:Class ;
+    rdfs:label "Kitchen Environment"@en ;
+    rdfs:comment "A kitchen environment made of kitchen components."@en .
+
+<https://w3id.org/koro#Component> a rdfs:Class, owl:Class ;
+    rdfs:label "Component"@en ;
+    rdfs:comment "A component in the kitchen environment."@en .
+
+<https://w3id.org/koro#Object> a rdfs:Class, owl:Class ;
+    rdfs:label "Object"@en ;
+    rdfs:comment "An object in the kitchen that can be manipulated by the robot."@en .
+    rdfs:subClassOf <https://w3id.org/koro#Component> .
+
+<https://w3id.org/koro#Location> a rdfs:Class, owl:Class ;
+    rdfs:label "Location"@en ;
+    rdfs:comment "The location of a component."@en .
+
+<https://w3id.org/koro#Translation> a rdfs:Class, owl:Class ;
+    rdfs:label "Translation"@en ;
+    rdfs:comment "The three coordinates location of a component."@en .
+
+<https://w3id.org/koro#Furniture> a rdfs:Class, owl:Class ;
+    rdfs:label "Furniture"@en ;
+    rdfs:comment "A piece of furniture in the kitchen."@en .
+    rdfs:subClassOf <https://w3id.org/koro#Component> .
+
+<https://w3id.org/koro#Storage> a rdfs:Class, owl:Class ;
+    rdfs:label "Storage"@en ;
+    rdfs:comment "A storage component in the kitchen."@en .
+    rdfs:subClassOf <https://w3id.org/koro#Furniture> .
+
+<https://w3id.org/koro#Appliance> a rdfs:Class, owl:Class ;
+    rdfs:label "Appliance"@en ;
+    rdfs:comment "An appliance in the kitchen."@en .
+    rdfs:subClassOf <https://w3id.org/koro#Furniture> .
+
+<https://w3id.org/koro#Furnishing> a rdfs:Class, owl:Class ;
+    rdfs:label "Table Chair"@en ;
+    rdfs:comment "A furniture in the kitchen, such as tables and chairs."@en .
+    rdfs:subClassOf <https://w3id.org/koro#Furniture> .
+
+
+###################################
+# OBJECT PROPERTIES
+###################################
+
+<https://w3id.org/koro#hasComponent> a rdf:Property, owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/koro#KitchenEnvironment> ;
+    rdfs:range <https://w3id.org/koro#Component> ;
+    rdfs:label "has component"@en ;
+    rdfs:comment "Relates a kitchen environment to its components."@en .
+
+<https://w3id.org/koro#hasLocation> a rdf:Property, owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/koro#Component> ;
+    rdfs:range <https://w3id.org/koro#Location> ;
+    rdfs:comment "Indicates the location of the component." ;
+    rdfs:label "has location" .
+
+<https://w3id.org/koro#hasLocationComponent> a rdf:Property, owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/koro#Location> ;
+    rdfs:range <https://w3id.org/koro#Component> ;
+    rdfs:comment "Describes the location of the object as a :Component." ;
+    rdfs:label "has location component" .
+
+<https://w3id.org/koro#hasTranslation> a rdf:Property, owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/koro#Location> ;
+    rdfs:range <https://w3id.org/koro#Translation> ;
+    rdfs:comment "Describes the location of the object as a :Translation." ;
+    rdfs:label "has translation" .
+
+<https://w3id.org/koro#hasCurrentLocation> a rdf:Property, owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/koro#Component> ;
+    rdfs:range <https://w3id.org/koro#Location> ;
+    rdfs:comment "Indicates the current location of the Component as a :Location." ;
+    rdfs:label "has current location" .
+
+<https://w3id.org/koro#hasTargetLocation> a rdf:Property, owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/koro#Component> ;
+    rdfs:range <https://w3id.org/koro#Location> ;
+    rdfs:comment "Indicates the target location of the object as a :Location." ;
+    rdfs:label "has target location" .
+
+<https://w3id.org/koro#hasLabel> a rdf:Property, owl:DatatypeProperty ;
+    rdfs:domain <https://w3id.org/koro#Component> ;
+    rdfs:range rdfs:label ;
+    rdfs:comment "Indicates a label of the object." ;
+    rdfs:label "has label" .
+
+
+###################################
+# DATA PROPERTIES
+###################################
+
+<https://w3id.org/koro#hasTranslationX> a rdf:Property, owl:DatatypeProperty ;
+    rdfs:domain <https://w3id.org/koro#Translation> ;
+    rdfs:range xsd:float ;
+    rdfs:comment "Indicates the X coordinate of the object as a :TranslationX." ;
+    rdfs:label "has translation X" .
+
+<https://w3id.org/koro#hasTranslationY> a rdf:Property, owl:DatatypeProperty ;
+    rdfs:domain <https://w3id.org/koro#Translation> ;
+    rdfs:range xsd:float ;
+    rdfs:comment "Indicates the Y coordinate of the object as a :TranslationY." ;
+    rdfs:label "has translation Y" .
+
+<https://w3id.org/koro#hasTranslationZ> a rdf:Property, owl:DatatypeProperty ;
+    rdfs:domain <https://w3id.org/koro#Translation> ;
+    rdfs:range xsd:float ;
+    rdfs:comment "Indicates the Z coordinate of the object as a :TranslationZ." ;
+    rdfs:label "has translation Z" .
+
+<https://w3id.org/koro#hasIdentifier> a rdf:Property, owl:DatatypeProperty ;
+    rdfs:domain <https://w3id.org/koro#Component> ;
+    rdfs:range dcterms:identifier ;
+    rdfs:comment "Indicates the identifier of the object." ;
+    rdfs:label "has identifier" .
+
+<https://w3id.org/koro#hasPreferredLabel> a rdf:Property, owl:DatatypeProperty ;
+    rdfs:domain <https://w3id.org/koro#Component> ;
+    rdfs:range bbccore:preferredLabel ;
+    rdfs:comment "Indicates the preferred label of the object." ;
+    rdfs:label "has preferred label" .

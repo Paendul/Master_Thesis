@@ -1,0 +1,17 @@
+Validation Report
+Conforms: False
+Results (2):
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:class koro:Storage ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:path ( koro:hasLocation koro:hasTargetLocation koro:hasLocationComponent ) ]
+	Focus Node: koro:apple_1
+	Value Node: koro:fruit_bowl
+	Result Path: ( koro:hasLocation koro:hasTargetLocation koro:hasLocationComponent )
+	Message: Value does not have class koro:Storage
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:class koro:Storage ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:path ( koro:hasLocation koro:hasTargetLocation koro:hasLocationComponent ) ]
+	Focus Node: koro:apple_2
+	Value Node: koro:fruit_bowl
+	Result Path: ( koro:hasLocation koro:hasTargetLocation koro:hasLocationComponent )
+	Message: Value does not have class koro:Storage

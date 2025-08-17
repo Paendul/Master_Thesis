@@ -1,5 +1,6 @@
 # This script extracts the id, name, and translation attributes
 # from Solid elements in a W3D file and saves them to an Excel file.
+# Use: python extract_script.py
 
 import xml.etree.ElementTree as ET
 import pandas as pd
