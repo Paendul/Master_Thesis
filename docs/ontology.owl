@@ -7,6 +7,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:koro="https://w3id.org/koro#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
@@ -103,6 +104,20 @@
     
 
 
+    <!-- https://w3id.org/koro#Component -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/koro#Component"/>
+    
+
+
+    <!-- https://w3id.org/koro#Furniture -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/koro#Furniture"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -134,26 +149,80 @@
     
 
 
+    <!-- https://w3id.org/koro#hasComponent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasComponent">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#KitchenEnvironment"/>
+        <rdfs:range rdf:resource="https://w3id.org/koro#Component"/>
+        <rdfs:comment xml:lang="en">Relates a kitchen environment to its components.</rdfs:comment>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/koro#hasCurrentLocation -->
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasCurrentLocation">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#Object"/>
-        <rdfs:range rdf:resource="https://w3id.org/koro#KitchenComponent"/>
-        <rdfs:comment>Indicates the current location of the object as a :KitchenComponent.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/koro#Location"/>
+        <rdfs:comment>Indicates the current location of the Component as a :Location.</rdfs:comment>
         <rdfs:label>has current location</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/koro#hasCurrentLocationKC -->
+    <!-- https://w3id.org/koro#hasIdentifier -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasCurrentLocationKC">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#KitchenComponent"/>
-        <rdfs:range rdf:resource="https://w3id.org/koro#coordinate"/>
-        <rdfs:comment>Indicates the current location of the kitchen component.</rdfs:comment>
-        <rdfs:label>has current location</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasIdentifier">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Component"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/identifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/koro#hasLabel -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasLabel">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/koro#hasLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasLocation">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/koro#Location"/>
+        <rdfs:comment>Indicates the location of the component.</rdfs:comment>
+        <rdfs:label>has location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/koro#hasLocationComponent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasLocationComponent">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Location"/>
+        <rdfs:range rdf:resource="https://w3id.org/koro#Component"/>
+        <rdfs:comment>Describes the location of the object as a :Component.</rdfs:comment>
+        <rdfs:label>has location component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/koro#hasPreferredLabel -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasPreferredLabel">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Component"/>
+        <rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"/>
     </owl:ObjectProperty>
     
 
@@ -162,97 +231,22 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasTargetLocation">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#Object"/>
-        <rdfs:range rdf:resource="https://w3id.org/koro#KitchenStorageComponent"/>
-        <rdfs:comment>Indicates the target location of the object as a :KitchenStorageComponent.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/koro#Location"/>
+        <rdfs:comment>Indicates the target location of the object as a :Location.</rdfs:comment>
         <rdfs:label>has target location</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/koro#hasTargetLocationKC -->
+    <!-- https://w3id.org/koro#hasTranslation -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasTargetLocationKC">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#KitchenComponent"/>
-        <rdfs:range rdf:resource="https://w3id.org/koro#coordinate"/>
-        <rdfs:comment>Indicates the target location of the kitchen component.</rdfs:comment>
-        <rdfs:label>has target location</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/koro#isClearKC -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#isClearKC">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#KitchenComponent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Boolean"/>
-        <rdfs:comment>Indicates if the surface of the kitchen component is clear.</rdfs:comment>
-        <rdfs:label>is clear</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/koro#isDirty -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#isDirty">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#Object"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Boolean"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#float"/>
-        <rdfs:comment>Indicates if the object is dirty.</rdfs:comment>
-        <rdfs:comment>Indicates the volume of the object.</rdfs:comment>
-        <rdfs:label>has volume</rdfs:label>
-        <rdfs:label>is dirty</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/koro#isDirtyKC -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#isDirtyKC">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#KitchenComponent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Boolean"/>
-        <rdfs:comment>Indicates if the kitchen component is dirty.</rdfs:comment>
-        <rdfs:label>is dirty</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/koro#isDisposable -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#isDisposable">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#Object"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Boolean"/>
-        <rdfs:comment>Indicates if the object is disposable.</rdfs:comment>
-        <rdfs:label>is disposable</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/koro#isFullKSC -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#isFullKSC">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#KitchenStorageComponent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Boolean"/>
-        <rdfs:comment>Indicates if the kitchen storage component is occupied at full capacity.</rdfs:comment>
-        <rdfs:label>is full</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/koro#isTrash -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#isTrash">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#Object"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Boolean"/>
-        <rdfs:comment>Indicates if the object is trash.</rdfs:comment>
-        <rdfs:label>is trash</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasTranslation">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Location"/>
+        <rdfs:range rdf:resource="https://w3id.org/koro#Translation"/>
+        <rdfs:comment>Describes the location of the object as a :Translation.</rdfs:comment>
+        <rdfs:label>has translation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -269,14 +263,59 @@
     
 
 
-    <!-- https://w3id.org/koro#hasInteractionType -->
+    <!-- https://w3id.org/koro#hasIdentifier -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasInteractionType">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#KitchenComponent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>Indicates the type of interaction the robot can have with the kitchen component.</rdfs:comment>
-        <rdfs:label>has interaction type</rdfs:label>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasIdentifier"/>
+    
+
+
+    <!-- https://w3id.org/koro#hasLabel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasLabel"/>
+    
+
+
+    <!-- https://w3id.org/koro#hasPreferredLabel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasPreferredLabel"/>
+    
+
+
+    <!-- https://w3id.org/koro#hasTranslationX -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasTranslationX">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Translation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Indicates the X coordinate of the object as a :TranslationX.</rdfs:comment>
+        <rdfs:label>has translation X</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/koro#hasTranslationY -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasTranslationY">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Translation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Indicates the Y coordinate of the object as a :TranslationY.</rdfs:comment>
+        <rdfs:label>has translation Y</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/koro#hasTranslationZ -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasTranslationZ">
+        <rdfs:domain rdf:resource="https://w3id.org/koro#Translation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Indicates the Z coordinate of the object as a :TranslationZ.</rdfs:comment>
+        <rdfs:label>has translation Z</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -293,24 +332,24 @@
     
 
 
-    <!-- http://purl.org/iot/vocab/m3lite#Coordinates -->
+    <!-- http://purl.org/dc/terms/identifier -->
 
 
-    <owl:Class rdf:about="http://purl.org/iot/vocab/m3lite#Coordinates"/>
+    <owl:Class rdf:about="http://purl.org/dc/terms/identifier"/>
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#Boolean -->
+    <!-- http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel -->
 
 
-    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Boolean"/>
+    <owl:Class rdf:about="http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"/>
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#float -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
 
-    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#float"/>
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -321,33 +360,56 @@
     
 
 
-    <!-- https://w3id.org/koro#Action -->
+    <!-- https://w3id.org/koro#Appliance -->
 
 
-    <owl:Class rdf:about="https://w3id.org/koro#Action">
-        <rdfs:comment xml:lang="en">An action that the robot can perform in the kitchen.</rdfs:comment>
-        <rdfs:label xml:lang="en">Action</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/koro#Appliance">
+        <rdfs:comment xml:lang="en">An appliance in the kitchen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Appliance</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/koro#KitchenComponent -->
+    <!-- https://w3id.org/koro#Component -->
 
 
-    <owl:Class rdf:about="https://w3id.org/koro#KitchenComponent">
-        <rdfs:comment xml:lang="en">A component in the kitchen where objects can be placed.</rdfs:comment>
-        <rdfs:label xml:lang="en">Kitchen Component</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/koro#Component"/>
+    
+
+
+    <!-- https://w3id.org/koro#Furnishing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/koro#Furnishing">
+        <rdfs:comment xml:lang="en">A furniture in the kitchen, such as tables and chairs.</rdfs:comment>
+        <rdfs:label xml:lang="en">Table Chair</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/koro#KitchenStorageComponent -->
+    <!-- https://w3id.org/koro#Furniture -->
 
 
-    <owl:Class rdf:about="https://w3id.org/koro#KitchenStorageComponent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/koro#KitchenComponent"/>
-        <rdfs:comment xml:lang="en">A kitchen component in which objects can be stored.</rdfs:comment>
-        <rdfs:label xml:lang="en">Kitchen Storage Component</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/koro#Furniture"/>
+    
+
+
+    <!-- https://w3id.org/koro#KitchenEnvironment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/koro#KitchenEnvironment">
+        <rdfs:comment xml:lang="en">A kitchen environment made of kitchen components.</rdfs:comment>
+        <rdfs:label xml:lang="en">Kitchen Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/koro#Location -->
+
+
+    <owl:Class rdf:about="https://w3id.org/koro#Location">
+        <rdfs:comment xml:lang="en">The location of a component.</rdfs:comment>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
     </owl:Class>
     
 
@@ -362,31 +424,23 @@
     
 
 
-    <!-- https://w3id.org/koro#coordinate -->
+    <!-- https://w3id.org/koro#Storage -->
 
 
-    <owl:Class rdf:about="https://w3id.org/koro#coordinate"/>
+    <owl:Class rdf:about="https://w3id.org/koro#Storage">
+        <rdfs:comment xml:lang="en">A storage component in the kitchen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Storage</rdfs:label>
+    </owl:Class>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- https://w3id.org/koro#Translation -->
 
 
-    
-
-
-    <!-- https://w3id.org/koro#coordinate -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/koro#coordinate">
-        <rdf:type rdf:resource="http://purl.org/iot/vocab/m3lite#Coordinates"/>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="https://w3id.org/koro#Translation">
+        <rdfs:comment xml:lang="en">The three coordinates location of a component.</rdfs:comment>
+        <rdfs:label xml:lang="en">Translation</rdfs:label>
+    </owl:Class>
     
 
 
@@ -399,9 +453,29 @@
      -->
 
 
-    <rdf:Description rdf:about="https://w3id.org/koro#coordinate">
-        <rdfs:comment xml:lang="en">A coordinate in the kitchen space.</rdfs:comment>
-        <rdfs:label xml:lang="en">Coordinate</rdfs:label>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+        <Component rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></Component>
+        <Furniture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></Furniture>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/koro#Component">
+        <rdfs:comment xml:lang="en">A component in the kitchen environment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Component</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/koro#Furniture">
+        <rdfs:comment xml:lang="en">A piece of furniture in the kitchen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Furniture</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/koro#hasIdentifier">
+        <rdfs:comment>Indicates the identifier of the object.</rdfs:comment>
+        <rdfs:label>has identifier</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/koro#hasLabel">
+        <rdfs:comment>Indicates a label of the object.</rdfs:comment>
+        <rdfs:label>has label</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/koro#hasPreferredLabel">
+        <rdfs:comment>Indicates the preferred label of the object.</rdfs:comment>
+        <rdfs:label>has preferred label</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
