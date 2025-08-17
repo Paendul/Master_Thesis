@@ -47,9 +47,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://w3id.org/koro#Component
-<https://w3id.org/koro#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # 
 # 
 # #################################################################
@@ -195,6 +192,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # 
 # https://w3id.org/koro#Component
 <https://w3id.org/koro#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/koro#Component> <http://www.w3.org/2000/01/rdf-schema#comment> "A component in the kitchen environment."@en .
+<https://w3id.org/koro#Component> <http://www.w3.org/2000/01/rdf-schema#label> "Component"@en .
 # 
 # https://w3id.org/koro#Furnishing
 <https://w3id.org/koro#Furnishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -220,6 +219,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # 
 # https://w3id.org/koro#Object
 <https://w3id.org/koro#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/koro#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/koro#Component> .
 <https://w3id.org/koro#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "An object in the kitchen that can be manipulated by the robot."@en .
 <https://w3id.org/koro#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Object"@en .
 # 
@@ -242,11 +242,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # #
 # #################################################################
 # 
-# 
-<http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/koro#Component> ""^^<http://www.w3.org/2001/XMLSchema#integer> .
-# 
-<https://w3id.org/koro#Component> <http://www.w3.org/2000/01/rdf-schema#comment> "A component in the kitchen environment."@en .
-<https://w3id.org/koro#Component> <http://www.w3.org/2000/01/rdf-schema#label> "Component"@en .
 # 
 <https://w3id.org/koro#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the identifier of the object." .
 <https://w3id.org/koro#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier" .

@@ -7,7 +7,6 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:koro="https://w3id.org/koro#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
@@ -101,13 +100,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
-
-
-    <!-- https://w3id.org/koro#Component -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/koro#Component"/>
     
 
 
@@ -367,7 +359,10 @@
     <!-- https://w3id.org/koro#Component -->
 
 
-    <owl:Class rdf:about="https://w3id.org/koro#Component"/>
+    <owl:Class rdf:about="https://w3id.org/koro#Component">
+        <rdfs:comment xml:lang="en">A component in the kitchen environment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Component</rdfs:label>
+    </owl:Class>
     
 
 
@@ -417,6 +412,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/koro#Object">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/koro#Component"/>
         <rdfs:comment xml:lang="en">An object in the kitchen that can be manipulated by the robot.</rdfs:comment>
         <rdfs:label xml:lang="en">Object</rdfs:label>
     </owl:Class>
@@ -453,13 +449,6 @@
      -->
 
 
-    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
-        <Component rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></Component>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/koro#Component">
-        <rdfs:comment xml:lang="en">A component in the kitchen environment.</rdfs:comment>
-        <rdfs:label xml:lang="en">Component</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/koro#hasIdentifier">
         <rdfs:comment>Indicates the identifier of the object.</rdfs:comment>
         <rdfs:label>has identifier</rdfs:label>

@@ -45,7 +45,7 @@
 
 <https://w3id.org/koro#Object> a rdfs:Class, owl:Class ;
     rdfs:label "Object"@en ;
-    rdfs:comment "An object in the kitchen that can be manipulated by the robot."@en .
+    rdfs:comment "An object in the kitchen that can be manipulated by the robot."@en ;
     rdfs:subClassOf <https://w3id.org/koro#Component> .
 
 <https://w3id.org/koro#Location> a rdfs:Class, owl:Class ;

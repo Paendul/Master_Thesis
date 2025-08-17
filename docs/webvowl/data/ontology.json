@@ -37,16 +37,16 @@
         "value" : "koro",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "1.0.0",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://w3id.org/koro#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
         "type" : "label"
       } ],
       "title" : [ {
@@ -110,7 +110,7 @@
     "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
     "id" : "2",
@@ -122,7 +122,7 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "36",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -248,7 +248,8 @@
     "comment" : {
       "en" : "An object in the kitchen that can be manipulated by the robot."
     },
-    "id" : "26"
+    "id" : "26",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "https://w3id.org/koro#Location",
     "baseIri" : "https://w3id.org/koro",
@@ -293,7 +294,7 @@
     "comment" : {
       "en" : "A kitchen environment made of kitchen components."
     },
-    "id" : "30"
+    "id" : "29"
   }, {
     "iri" : "http://purl.org/dc/terms/identifier",
     "baseIri" : "http://purl.org/dc/terms",
@@ -324,7 +325,7 @@
       "IRI-based" : "Component",
       "en" : "Component"
     },
-    "subClasses" : [ "5" ],
+    "subClasses" : [ "5", "26" ],
     "comment" : {
       "en" : "A component in the kitchen environment."
     },
@@ -337,7 +338,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "35"
+    "id" : "36"
   } ],
   "property" : [ {
     "id" : "0",
@@ -367,7 +368,7 @@
     "id" : "28",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "29",
+    "id" : "30",
     "type" : "owl:objectProperty"
   }, {
     "id" : "31",
@@ -382,10 +383,13 @@
     "id" : "34",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "36",
+    "id" : "35",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
@@ -518,7 +522,7 @@
       "undefined" : "Indicates a label of the object."
     },
     "attributes" : [ "object" ],
-    "id" : "29"
+    "id" : "30"
   }, {
     "iri" : "https://w3id.org/koro#hasLocationComponent",
     "baseIri" : "https://w3id.org/koro",
@@ -541,7 +545,7 @@
       "IRI-based" : "hasComponent",
       "en" : "has component"
     },
-    "domain" : "30",
+    "domain" : "29",
     "comment" : {
       "en" : "Relates a kitchen environment to its components."
     },
@@ -562,19 +566,24 @@
     "attributes" : [ "object" ],
     "id" : "33"
   }, {
+    "range" : "1",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
     "range" : "5",
     "domain" : "7",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "34"
+    "id" : "35"
   }, {
     "range" : "1",
     "domain" : "5",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "36"
+    "id" : "37"
   }, {
     "range" : "5",
     "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "37"
+    "id" : "38"
   } ]
 }

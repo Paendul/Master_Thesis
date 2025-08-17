@@ -136,6 +136,9 @@ This ontology has the following classes and properties.</span>
       <a href="#Appliance" title="https://w3id.org/koro#Appliance">Appliance</a>
    </li>
    <li>
+      <a href="#Component" title="https://w3id.org/koro#Component">Component</a>
+   </li>
+   <li>
       <a href="#Furnishing" title="https://w3id.org/koro#Furnishing">Furnishing</a>
    </li>
    <li>
@@ -221,6 +224,7 @@ This section provides details for each class and property defined by Kitchen Obj
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#Appliance" title="https://w3id.org/koro#Appliance">Appliance</a></li>
+  <li><a href="#Component" title="https://w3id.org/koro#Component">Component</a></li>
   <li><a href="#Furnishing" title="https://w3id.org/koro#Furnishing">Furnishing</a></li>
   <li><a href="#Furniture" title="https://w3id.org/koro#Furniture">Furniture</a></li>
   <li><a href="#KitchenEnvironment" title="https://w3id.org/koro#KitchenEnvironment">Kitchen Environment</a></li>
@@ -241,6 +245,33 @@ This section provides details for each class and property defined by Kitchen Obj
    </dt>
    <dd>
     <a href="#Furniture" title="https://w3id.org/koro#Furniture">Furniture</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Component">
+  <h3>Component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/koro#Component</p>
+  <div class="comment">
+   <span class="markdown">A component in the kitchen environment.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Furniture" title="https://w3id.org/koro#Furniture">Furniture</a> <sup class="type-c" title="class">c</sup>, <a href="#Object" title="https://w3id.org/koro#Object">Object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasCurrentLocation" title="https://w3id.org/koro#hasCurrentLocation">has current location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIdentifier" title="https://w3id.org/koro#hasIdentifier">has identifier</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLabel" title="https://w3id.org/koro#hasLabel">has label</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="https://w3id.org/koro#hasLocation">has location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPreferredLabel" title="https://w3id.org/koro#hasPreferredLabel">has preferred label</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTargetLocation" title="https://w3id.org/koro#hasTargetLocation">has target location</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasComponent" title="https://w3id.org/koro#hasComponent">has component</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLocationComponent" title="https://w3id.org/koro#hasLocationComponent">has location component</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -270,7 +301,7 @@ This section provides details for each class and property defined by Kitchen Obj
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
@@ -322,6 +353,14 @@ This section provides details for each class and property defined by Kitchen Obj
   <div class="comment">
    <span class="markdown">An object in the kitchen that can be manipulated by the robot.</span>
   </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="Storage">
   <h3>Storage<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -390,7 +429,7 @@ This section provides details for each class and property defined by Kitchen Obj
      has range
     </dt>
     <dd>
-     <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -407,7 +446,7 @@ This section provides details for each class and property defined by Kitchen Obj
      has domain
     </dt>
     <dd>
-     <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -427,7 +466,7 @@ This section provides details for each class and property defined by Kitchen Obj
      has domain
     </dt>
     <dd>
-     <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -453,7 +492,7 @@ This section provides details for each class and property defined by Kitchen Obj
      has domain
     </dt>
     <dd>
-     <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -482,7 +521,7 @@ This section provides details for each class and property defined by Kitchen Obj
      has domain
     </dt>
     <dd>
-     <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -511,7 +550,7 @@ This section provides details for each class and property defined by Kitchen Obj
      has range
     </dt>
     <dd>
-     <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -525,7 +564,7 @@ This section provides details for each class and property defined by Kitchen Obj
      has domain
     </dt>
     <dd>
-     <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -554,7 +593,7 @@ This section provides details for each class and property defined by Kitchen Obj
      has domain
     </dt>
     <dd>
-     <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range

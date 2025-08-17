@@ -60,10 +60,6 @@ _:genid1 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 <http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/koro#Component
-:Component rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Datatypes
 #################################################################
@@ -210,7 +206,9 @@ rdfs:label rdf:type owl:Class .
 
 
 ###  https://w3id.org/koro#Component
-:Component rdf:type owl:Class .
+:Component rdf:type owl:Class ;
+           rdfs:comment "A component in the kitchen environment."@en ;
+           rdfs:label "Component"@en .
 
 
 ###  https://w3id.org/koro#Furnishing
@@ -241,6 +239,7 @@ rdfs:label rdf:type owl:Class .
 
 ###  https://w3id.org/koro#Object
 :Object rdf:type owl:Class ;
+        rdfs:subClassOf :Component ;
         rdfs:comment "An object in the kitchen that can be manipulated by the robot."@en ;
         rdfs:label "Object"@en .
 
@@ -261,13 +260,6 @@ rdfs:label rdf:type owl:Class .
 #################################################################
 #    Annotations
 #################################################################
-
-rdfs:subClassOf :Component  .
-
-
-:Component rdfs:comment "A component in the kitchen environment."@en ;
-           rdfs:label "Component"@en .
-
 
 :hasIdentifier rdfs:comment "Indicates the identifier of the object." ;
                rdfs:label "has identifier" .
