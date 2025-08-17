@@ -64,10 +64,6 @@ _:genid1 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 :Component rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/koro#Furniture
-:Furniture rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Datatypes
 #################################################################
@@ -208,6 +204,7 @@ rdfs:label rdf:type owl:Class .
 
 ###  https://w3id.org/koro#Appliance
 :Appliance rdf:type owl:Class ;
+           rdfs:subClassOf :Furniture ;
            rdfs:comment "An appliance in the kitchen."@en ;
            rdfs:label "Appliance"@en .
 
@@ -218,12 +215,16 @@ rdfs:label rdf:type owl:Class .
 
 ###  https://w3id.org/koro#Furnishing
 :Furnishing rdf:type owl:Class ;
+            rdfs:subClassOf :Furniture ;
             rdfs:comment "A furniture in the kitchen, such as tables and chairs."@en ;
             rdfs:label "Furnishing"@en .
 
 
 ###  https://w3id.org/koro#Furniture
-:Furniture rdf:type owl:Class .
+:Furniture rdf:type owl:Class ;
+           rdfs:subClassOf :Component ;
+           rdfs:comment "A piece of furniture in the kitchen."@en ;
+           rdfs:label "Furniture"@en .
 
 
 ###  https://w3id.org/koro#KitchenEnvironment
@@ -246,6 +247,7 @@ rdfs:label rdf:type owl:Class .
 
 ###  https://w3id.org/koro#Storage
 :Storage rdf:type owl:Class ;
+         rdfs:subClassOf :Furniture ;
          rdfs:comment "A storage component in the kitchen."@en ;
          rdfs:label "Storage"@en .
 
@@ -260,16 +262,11 @@ rdfs:label rdf:type owl:Class .
 #    Annotations
 #################################################################
 
-rdfs:subClassOf :Component  ;
-                :Furniture  .
+rdfs:subClassOf :Component  .
 
 
 :Component rdfs:comment "A component in the kitchen environment."@en ;
            rdfs:label "Component"@en .
-
-
-:Furniture rdfs:comment "A piece of furniture in the kitchen."@en ;
-           rdfs:label "Furniture"@en .
 
 
 :hasIdentifier rdfs:comment "Indicates the identifier of the object." ;

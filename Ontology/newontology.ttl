@@ -58,22 +58,22 @@
 
 <https://w3id.org/koro#Furniture> a rdfs:Class, owl:Class ;
     rdfs:label "Furniture"@en ;
-    rdfs:comment "A piece of furniture in the kitchen."@en .
+    rdfs:comment "A piece of furniture in the kitchen."@en ;
     rdfs:subClassOf <https://w3id.org/koro#Component> .
 
 <https://w3id.org/koro#Storage> a rdfs:Class, owl:Class ;
     rdfs:label "Storage"@en ;
-    rdfs:comment "A storage component in the kitchen."@en .
+    rdfs:comment "A storage component in the kitchen."@en ;
     rdfs:subClassOf <https://w3id.org/koro#Furniture> .
 
 <https://w3id.org/koro#Appliance> a rdfs:Class, owl:Class ;
     rdfs:label "Appliance"@en ;
-    rdfs:comment "An appliance in the kitchen."@en .
+    rdfs:comment "An appliance in the kitchen."@en ;
     rdfs:subClassOf <https://w3id.org/koro#Furniture> .
 
 <https://w3id.org/koro#Furnishing> a rdfs:Class, owl:Class ;
     rdfs:label "Furnishing"@en ;
-    rdfs:comment "A furniture in the kitchen, such as tables and chairs."@en .
+    rdfs:comment "A furniture in the kitchen, such as tables and chairs."@en ;
     rdfs:subClassOf <https://w3id.org/koro#Furniture> .
 
 

@@ -111,13 +111,6 @@
     
 
 
-    <!-- https://w3id.org/koro#Furniture -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/koro#Furniture"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -364,6 +357,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/koro#Appliance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/koro#Furniture"/>
         <rdfs:comment xml:lang="en">An appliance in the kitchen.</rdfs:comment>
         <rdfs:label xml:lang="en">Appliance</rdfs:label>
     </owl:Class>
@@ -381,6 +375,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/koro#Furnishing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/koro#Furniture"/>
         <rdfs:comment xml:lang="en">A furniture in the kitchen, such as tables and chairs.</rdfs:comment>
         <rdfs:label xml:lang="en">Furnishing</rdfs:label>
     </owl:Class>
@@ -390,7 +385,11 @@
     <!-- https://w3id.org/koro#Furniture -->
 
 
-    <owl:Class rdf:about="https://w3id.org/koro#Furniture"/>
+    <owl:Class rdf:about="https://w3id.org/koro#Furniture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/koro#Component"/>
+        <rdfs:comment xml:lang="en">A piece of furniture in the kitchen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Furniture</rdfs:label>
+    </owl:Class>
     
 
 
@@ -428,6 +427,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/koro#Storage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/koro#Furniture"/>
         <rdfs:comment xml:lang="en">A storage component in the kitchen.</rdfs:comment>
         <rdfs:label xml:lang="en">Storage</rdfs:label>
     </owl:Class>
@@ -455,15 +455,10 @@
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
         <Component rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></Component>
-        <Furniture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></Furniture>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/koro#Component">
         <rdfs:comment xml:lang="en">A component in the kitchen environment.</rdfs:comment>
         <rdfs:label xml:lang="en">Component</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/koro#Furniture">
-        <rdfs:comment xml:lang="en">A piece of furniture in the kitchen.</rdfs:comment>
-        <rdfs:label xml:lang="en">Furniture</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/koro#hasIdentifier">
         <rdfs:comment>Indicates the identifier of the object.</rdfs:comment>

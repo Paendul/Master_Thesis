@@ -139,6 +139,9 @@ This ontology has the following classes and properties.</span>
       <a href="#Furnishing" title="https://w3id.org/koro#Furnishing">Furnishing</a>
    </li>
    <li>
+      <a href="#Furniture" title="https://w3id.org/koro#Furniture">Furniture</a>
+   </li>
+   <li>
       <a href="#KitchenEnvironment" title="https://w3id.org/koro#KitchenEnvironment">Kitchen Environment</a>
    </li>
    <li>
@@ -219,6 +222,7 @@ This section provides details for each class and property defined by Kitchen Obj
  <ul class="hlist">
   <li><a href="#Appliance" title="https://w3id.org/koro#Appliance">Appliance</a></li>
   <li><a href="#Furnishing" title="https://w3id.org/koro#Furnishing">Furnishing</a></li>
+  <li><a href="#Furniture" title="https://w3id.org/koro#Furniture">Furniture</a></li>
   <li><a href="#KitchenEnvironment" title="https://w3id.org/koro#KitchenEnvironment">Kitchen Environment</a></li>
   <li><a href="#Location" title="https://w3id.org/koro#Location">Location</a></li>
   <li><a href="#Object" title="https://w3id.org/koro#Object">Object</a></li>
@@ -231,6 +235,14 @@ This section provides details for each class and property defined by Kitchen Obj
   <div class="comment">
    <span class="markdown">An appliance in the kitchen.</span>
   </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Furniture" title="https://w3id.org/koro#Furniture">Furniture</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="Furnishing">
   <h3>Furnishing<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -238,6 +250,35 @@ This section provides details for each class and property defined by Kitchen Obj
   <div class="comment">
    <span class="markdown">A furniture in the kitchen, such as tables and chairs.</span>
   </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Furniture" title="https://w3id.org/koro#Furniture">Furniture</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Furniture">
+  <h3>Furniture<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/koro#Furniture</p>
+  <div class="comment">
+   <span class="markdown">A piece of furniture in the kitchen.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/koro#Component" target="_blank" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Appliance" title="https://w3id.org/koro#Appliance">Appliance</a> <sup class="type-c" title="class">c</sup>, <a href="#Furnishing" title="https://w3id.org/koro#Furnishing">Furnishing</a> <sup class="type-c" title="class">c</sup>, <a href="#Storage" title="https://w3id.org/koro#Storage">Storage</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="KitchenEnvironment">
   <h3>Kitchen Environment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -288,6 +329,14 @@ This section provides details for each class and property defined by Kitchen Obj
   <div class="comment">
    <span class="markdown">A storage component in the kitchen.</span>
   </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Furniture" title="https://w3id.org/koro#Furniture">Furniture</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="Translation">
   <h3>Translation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>

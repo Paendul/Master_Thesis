@@ -44,10 +44,6 @@
   "https://w3id.org/koro#Component" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : ""
-  } ],
-  "https://w3id.org/koro#Furniture" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : ""
   } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
@@ -101,6 +97,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Appliance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/koro#Furniture"
   } ]
 }, {
   "@id" : "https://w3id.org/koro#Component",
@@ -123,10 +122,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Furnishing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/koro#Furniture"
   } ]
 }, {
   "@id" : "https://w3id.org/koro#Furniture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A piece of furniture in the kitchen."
@@ -134,6 +136,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Furniture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/koro#Component"
   } ]
 }, {
   "@id" : "https://w3id.org/koro#KitchenEnvironment",
@@ -178,6 +183,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Storage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/koro#Furniture"
   } ]
 }, {
   "@id" : "https://w3id.org/koro#Translation",
