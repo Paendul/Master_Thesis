@@ -37,16 +37,16 @@
         "value" : "koro",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "1.0.0",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://w3id.org/koro#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
         "type" : "label"
       } ],
       "title" : [ {
@@ -104,7 +104,7 @@
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
     "id" : "26",
@@ -181,7 +181,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "Furnishing",
-      "en" : "Table Chair"
+      "en" : "Furnishing"
     },
     "comment" : {
       "en" : "A furniture in the kitchen, such as tables and chairs."
@@ -269,7 +269,7 @@
     "comment" : {
       "en" : "A kitchen environment made of kitchen components."
     },
-    "id" : "25"
+    "id" : "24"
   }, {
     "iri" : "http://purl.org/dc/terms/identifier",
     "baseIri" : "http://purl.org/dc/terms",
@@ -338,7 +338,7 @@
     "id" : "23",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "24",
+    "id" : "25",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "27",
@@ -475,7 +475,7 @@
       "undefined" : "Indicates a label of the object."
     },
     "attributes" : [ "datatype" ],
-    "id" : "24"
+    "id" : "25"
   }, {
     "iri" : "https://w3id.org/koro#hasLocationComponent",
     "baseIri" : "https://w3id.org/koro",
@@ -498,7 +498,7 @@
       "IRI-based" : "hasComponent",
       "en" : "has component"
     },
-    "domain" : "25",
+    "domain" : "24",
     "comment" : {
       "en" : "Relates a kitchen environment to its components."
     },

@@ -201,7 +201,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # https://w3id.org/koro#Furnishing
 <https://w3id.org/koro#Furnishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/koro#Furnishing> <http://www.w3.org/2000/01/rdf-schema#comment> "A furniture in the kitchen, such as tables and chairs."@en .
-<https://w3id.org/koro#Furnishing> <http://www.w3.org/2000/01/rdf-schema#label> "Table Chair"@en .
+<https://w3id.org/koro#Furnishing> <http://www.w3.org/2000/01/rdf-schema#label> "Furnishing"@en .
 # 
 # https://w3id.org/koro#Furniture
 <https://w3id.org/koro#Furniture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

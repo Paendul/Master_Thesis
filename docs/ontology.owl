@@ -382,7 +382,7 @@
 
     <owl:Class rdf:about="https://w3id.org/koro#Furnishing">
         <rdfs:comment xml:lang="en">A furniture in the kitchen, such as tables and chairs.</rdfs:comment>
-        <rdfs:label xml:lang="en">Table Chair</rdfs:label>
+        <rdfs:label xml:lang="en">Furnishing</rdfs:label>
     </owl:Class>
     
 

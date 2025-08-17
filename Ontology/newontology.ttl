@@ -72,7 +72,7 @@
     rdfs:subClassOf <https://w3id.org/koro#Furniture> .
 
 <https://w3id.org/koro#Furnishing> a rdfs:Class, owl:Class ;
-    rdfs:label "Table Chair"@en ;
+    rdfs:label "Furnishing"@en ;
     rdfs:comment "A furniture in the kitchen, such as tables and chairs."@en .
     rdfs:subClassOf <https://w3id.org/koro#Furniture> .
 
