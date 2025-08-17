@@ -89,10 +89,7 @@ $(function(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
-</div>
-<div id="toc"></div> 
+</div><div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -169,25 +166,10 @@ This ontology has the following classes and properties.</span>
       <a href="#hasCurrentLocation" title="https://w3id.org/koro#hasCurrentLocation">has current location</a>
    </li>
    <li>
-      <a href="#hasIdentifier" title="https://w3id.org/koro#hasIdentifier">
-         <span>has identifier</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasLabel" title="https://w3id.org/koro#hasLabel">
-         <span>has label</span>
-      </a>
-   </li>
-   <li>
       <a href="#hasLocation" title="https://w3id.org/koro#hasLocation">has location</a>
    </li>
    <li>
       <a href="#hasLocationComponent" title="https://w3id.org/koro#hasLocationComponent">has location component</a>
-   </li>
-   <li>
-      <a href="#hasPreferredLabel" title="https://w3id.org/koro#hasPreferredLabel">
-         <span>has preferred label</span>
-      </a>
    </li>
    <li>
       <a href="#hasTargetLocation" title="https://w3id.org/koro#hasTargetLocation">has target location</a>
@@ -265,7 +247,7 @@ This section provides details for each class and property defined by Kitchen Obj
     is in domain of
    </dt>
    <dd>
-    <a href="#hasCurrentLocation" title="https://w3id.org/koro#hasCurrentLocation">has current location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIdentifier" title="https://w3id.org/koro#hasIdentifier">has identifier</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLabel" title="https://w3id.org/koro#hasLabel">has label</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="https://w3id.org/koro#hasLocation">has location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPreferredLabel" title="https://w3id.org/koro#hasPreferredLabel">has preferred label</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTargetLocation" title="https://w3id.org/koro#hasTargetLocation">has target location</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasCurrentLocation" title="https://w3id.org/koro#hasCurrentLocation">has current location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="https://w3id.org/koro#hasLocation">has location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTargetLocation" title="https://w3id.org/koro#hasTargetLocation">has target location</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -403,11 +385,8 @@ This section provides details for each class and property defined by Kitchen Obj
  <ul class="hlist">
   <li><a href="#hasComponent" title="https://w3id.org/koro#hasComponent">has component</a></li>
   <li><a href="#hasCurrentLocation" title="https://w3id.org/koro#hasCurrentLocation">has current location</a></li>
-  <li><a href="#hasIdentifier" title="https://w3id.org/koro#hasIdentifier"> <span>has identifier</span> </a></li>
-  <li><a href="#hasLabel" title="https://w3id.org/koro#hasLabel"> <span>has label</span> </a></li>
   <li><a href="#hasLocation" title="https://w3id.org/koro#hasLocation">has location</a></li>
   <li><a href="#hasLocationComponent" title="https://w3id.org/koro#hasLocationComponent">has location component</a></li>
-  <li><a href="#hasPreferredLabel" title="https://w3id.org/koro#hasPreferredLabel"> <span>has preferred label</span> </a></li>
   <li><a href="#hasTargetLocation" title="https://w3id.org/koro#hasTargetLocation">has target location</a></li>
   <li><a href="#hasTranslation" title="https://w3id.org/koro#hasTranslation">has translation</a></li>
  </ul>
@@ -457,58 +436,6 @@ This section provides details for each class and property defined by Kitchen Obj
    </dl>
   </div>
  </div>
- <div class="entity" id="hasIdentifier">
-  <h3>has identifier<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/koro#hasIdentifier</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://purl.org/dc/terms/identifier" target="_blank" title="http://purl.org/dc/terms/identifier">identifier</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasLabel">
-  <h3>has label<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/koro#hasLabel</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#label">label</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="hasLocation">
   <h3>has location<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/koro#hasLocation</p>
@@ -551,32 +478,6 @@ This section provides details for each class and property defined by Kitchen Obj
     </dt>
     <dd>
      <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasPreferredLabel">
-  <h3>has preferred label<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/koro#hasPreferredLabel</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Component" title="https://w3id.org/koro#Component">Component</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel" target="_blank" title="http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel">preferred Label</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
     </dd>
    </dl>
   </div>
@@ -711,15 +612,6 @@ This section provides details for each class and property defined by Kitchen Obj
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 </div>
 </div>
-</div>
-    
-
-<!--REFERENCES SECTION-->
-  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
-
 </div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

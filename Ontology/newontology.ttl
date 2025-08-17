@@ -117,12 +117,6 @@
     rdfs:comment "Indicates the target location of the object as a :Location." ;
     rdfs:label "has target location" .
 
-<https://w3id.org/koro#hasLabel> a rdf:Property, owl:DatatypeProperty ;
-    rdfs:domain <https://w3id.org/koro#Component> ;
-    rdfs:range rdfs:label ;
-    rdfs:comment "Indicates a label of the object." ;
-    rdfs:label "has label" .
-
 
 ###################################
 # DATA PROPERTIES
@@ -145,15 +139,3 @@
     rdfs:range xsd:float ;
     rdfs:comment "Indicates the Z coordinate of the object as a :TranslationZ." ;
     rdfs:label "has translation Z" .
-
-<https://w3id.org/koro#hasIdentifier> a rdf:Property, owl:DatatypeProperty ;
-    rdfs:domain <https://w3id.org/koro#Component> ;
-    rdfs:range dcterms:identifier ;
-    rdfs:comment "Indicates the identifier of the object." ;
-    rdfs:label "has identifier" .
-
-<https://w3id.org/koro#hasPreferredLabel> a rdf:Property, owl:DatatypeProperty ;
-    rdfs:domain <https://w3id.org/koro#Component> ;
-    rdfs:range bbccore:preferredLabel ;
-    rdfs:comment "Indicates the preferred label of the object." ;
-    rdfs:label "has preferred label" .

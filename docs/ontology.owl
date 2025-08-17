@@ -158,26 +158,6 @@
     
 
 
-    <!-- https://w3id.org/koro#hasIdentifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasIdentifier">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#Component"/>
-        <rdfs:range rdf:resource="http://purl.org/dc/terms/identifier"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/koro#hasLabel -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasLabel">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#Component"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/koro#hasLocation -->
 
 
@@ -198,16 +178,6 @@
         <rdfs:range rdf:resource="https://w3id.org/koro#Component"/>
         <rdfs:comment>Describes the location of the object as a :Component.</rdfs:comment>
         <rdfs:label>has location component</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/koro#hasPreferredLabel -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/koro#hasPreferredLabel">
-        <rdfs:domain rdf:resource="https://w3id.org/koro#Component"/>
-        <rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"/>
     </owl:ObjectProperty>
     
 
@@ -245,27 +215,6 @@
      -->
 
 
-    
-
-
-    <!-- https://w3id.org/koro#hasIdentifier -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasIdentifier"/>
-    
-
-
-    <!-- https://w3id.org/koro#hasLabel -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasLabel"/>
-    
-
-
-    <!-- https://w3id.org/koro#hasPreferredLabel -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/koro#hasPreferredLabel"/>
     
 
 
@@ -314,27 +263,6 @@
      -->
 
 
-    
-
-
-    <!-- http://purl.org/dc/terms/identifier -->
-
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/identifier"/>
-    
-
-
-    <!-- http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel -->
-
-
-    <owl:Class rdf:about="http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -437,30 +365,6 @@
         <rdfs:comment xml:lang="en">The three coordinates location of a component.</rdfs:comment>
         <rdfs:label xml:lang="en">Translation</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="https://w3id.org/koro#hasIdentifier">
-        <rdfs:comment>Indicates the identifier of the object.</rdfs:comment>
-        <rdfs:label>has identifier</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/koro#hasLabel">
-        <rdfs:comment>Indicates a label of the object.</rdfs:comment>
-        <rdfs:label>has label</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/koro#hasPreferredLabel">
-        <rdfs:comment>Indicates the preferred label of the object.</rdfs:comment>
-        <rdfs:label>has preferred label</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 

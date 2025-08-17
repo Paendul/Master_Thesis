@@ -82,18 +82,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <https://w3id.org/koro#hasCurrentLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the current location of the Component as a :Location." .
 <https://w3id.org/koro#hasCurrentLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has current location" .
 # 
-# https://w3id.org/koro#hasIdentifier
-<https://w3id.org/koro#hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/koro#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#Component> .
-<https://w3id.org/koro#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/identifier> .
-<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/koro#hasLabel
-<https://w3id.org/koro#hasLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/koro#hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#Component> .
-<https://w3id.org/koro#hasLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#label> .
-<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # https://w3id.org/koro#hasLocation
 <https://w3id.org/koro#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/koro#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#Component> .
@@ -107,12 +95,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <https://w3id.org/koro#hasLocationComponent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/koro#Component> .
 <https://w3id.org/koro#hasLocationComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the location of the object as a :Component." .
 <https://w3id.org/koro#hasLocationComponent> <http://www.w3.org/2000/01/rdf-schema#label> "has location component" .
-# 
-# https://w3id.org/koro#hasPreferredLabel
-<https://w3id.org/koro#hasPreferredLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/koro#hasPreferredLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/koro#Component> .
-<https://w3id.org/koro#hasPreferredLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel> .
-<http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/koro#hasTargetLocation
 <https://w3id.org/koro#hasTargetLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -136,15 +118,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # #
 # #################################################################
 # 
-# 
-# https://w3id.org/koro#hasIdentifier
-<https://w3id.org/koro#hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://w3id.org/koro#hasLabel
-<https://w3id.org/koro#hasLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://w3id.org/koro#hasPreferredLabel
-<https://w3id.org/koro#hasPreferredLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # https://w3id.org/koro#hasTranslationX
 <https://w3id.org/koro#hasTranslationX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -175,12 +148,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # #
 # #################################################################
 # 
-# 
-# http://purl.org/dc/terms/identifier
-# 
-# http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel
-# 
-# http://www.w3.org/2000/01/rdf-schema#label
 # 
 # http://xmlns.com/foaf/0.1/Person
 # 
@@ -233,23 +200,5 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <https://w3id.org/koro#Translation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/koro#Translation> <http://www.w3.org/2000/01/rdf-schema#comment> "The three coordinates location of a component."@en .
 <https://w3id.org/koro#Translation> <http://www.w3.org/2000/01/rdf-schema#label> "Translation"@en .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<https://w3id.org/koro#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the identifier of the object." .
-<https://w3id.org/koro#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier" .
-# 
-<https://w3id.org/koro#hasLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a label of the object." .
-<https://w3id.org/koro#hasLabel> <http://www.w3.org/2000/01/rdf-schema#label> "has label" .
-# 
-<https://w3id.org/koro#hasPreferredLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the preferred label of the object." .
-<https://w3id.org/koro#hasPreferredLabel> <http://www.w3.org/2000/01/rdf-schema#label> "has preferred label" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
